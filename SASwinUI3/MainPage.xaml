@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="SAS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="using:SAS.Views"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <AcrylicBrush x:Key="SettingsSurfaceBrush" TintColor="#EEF8FC" TintOpacity="0.18" TintLuminosityOpacity="0.82" FallbackColor="#EEF8FC" />
+        <AcrylicBrush x:Key="SettingsNavBrush" TintColor="#EAF5FA" TintOpacity="0.42" TintLuminosityOpacity="0.80" FallbackColor="#EAF5FA" />
+        <SolidColorBrush x:Key="SettingsNavSelectedBrush" Color="#DDECF3" />
+        <SolidColorBrush x:Key="SettingsCardBrush" Color="#FAFDFF" />
+        <SolidColorBrush x:Key="SettingsDividerBrush" Color="#DDE8EE" />
+        <Style x:Key="NavButtonStyle" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Padding" Value="14,10" />
+            <Setter Property="Margin" Value="0,2" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+        <Style x:Key="CardBorderStyle" TargetType="Border">
+            <Setter Property="CornerRadius" Value="8" />
+            <Setter Property="Padding" Value="20" />
+            <Setter Property="Background" Value="{StaticResource SettingsCardBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource SettingsDividerBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+        <Style x:Key="SmallLabelStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+        <Style x:Key="PageTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{StaticResource SettingsSurfaceBrush}">
+        <NavigationView
+            x:Name="RootNavigationView"
+            PaneDisplayMode="Auto"
+            IsBackButtonVisible="Collapsed"
+            IsSettingsVisible="False"
+            IsPaneToggleButtonVisible="False"
+            IsPaneOpen="False"
+            OpenPaneLength="260"
+            CompactPaneLength="48"
+            Background="{StaticResource SettingsSurfaceBrush}"
+            PaneOpening="RootNavigationView_PaneStateChanged"
+            PaneClosing="RootNavigationView_PaneStateChanged"
+            SelectionChanged="RootNavigationView_SelectionChanged"
+            BackRequested="RootNavigationView_BackRequested">
+            <NavigationView.Resources>
+                <SolidColorBrush x:Key="NavigationViewDefaultPaneBackground" Color="#EEF8FC" />
+                <SolidColorBrush x:Key="NavigationViewExpandedPaneBackground" Color="#EEF8FC" />
+                <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent" />
+                <SolidColorBrush x:Key="NavigationViewTopPaneBackground" Color="#EEF8FC" />
+                <x:Double x:Key="NavigationViewCompactPaneLength">48</x:Double>
+                <x:Double x:Key="NavigationViewItemOnLeftMinHeight">40</x:Double>
+                <x:Double x:Key="NavigationViewItemOnLeftIconBoxHeight">18</x:Double>
+                <Thickness x:Key="NavigationViewItemButtonMargin">4,4</Thickness>
+                <Thickness x:Key="NavigationViewItemMargin">0,2</Thickness>
+            </NavigationView.Resources>
+            <NavigationView.PaneHeader>
+                <Grid x:Name="PaneHeaderGrid" Padding="12,12,8,18" ColumnSpacing="10" MinHeight="76">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Assets/SasLogo.png" Width="34" Height="34" VerticalAlignment="Center" />
+                    <StackPanel x:Name="PaneHeaderText" Grid.Column="1" Spacing="2">
+                            <TextBlock Text="SAS" FontSize="22" FontWeight="SemiBold" />
+                        <TextBlock Text="Local face recognition" Style="{StaticResource SmallLabelStyle}" />
+                    </StackPanel>
+                </Grid>
+            </NavigationView.PaneHeader>
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="DashboardNavItem" Icon="Home" Content="Dashboard" Tag="Dashboard" IsSelected="True" />
+                <NavigationViewItem x:Name="RecognitionNavItem" Content="Face Recognition" Tag="Recognition">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE722;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="FaceDataNavItem" Icon="List" Content="Face Data" Tag="FaceData" />
+                <NavigationViewItem x:Name="LogsNavItem" Icon="Document" Content="Log" Tag="Logs" />
+                <NavigationViewItem x:Name="SettingsNavItem" Icon="Setting" Content="Settings" Tag="Settings" />
+            </NavigationView.MenuItems>
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem x:Name="AccountNavItem" Content="Guest" Tag="Account" Visibility="Collapsed">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE77B;" />
+                    </NavigationViewItem.Icon>
+                    <NavigationViewItem.ContextFlyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem Text="Switch account" Click="SwitchAccountFlyoutItem_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE77B;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem Text="Log out" Click="LogOutFlyoutItem_Click">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xF3B1;" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                        </MenuFlyout>
+                    </NavigationViewItem.ContextFlyout>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="SignInNavItem" Content="Sign in" Tag="SignIn">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE77B;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.FooterMenuItems>
+            <Grid>
+                <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+                    <Grid x:Name="PageContentGrid" Padding="70,28,70,28"
+                          HorizontalAlignment="Stretch">
+                        <Grid x:Name="DashboardPage" RowSpacing="16" MinHeight="620">
+                            <Grid.Transitions>
+                                <TransitionCollection>
+                                    <EntranceThemeTransition FromHorizontalOffset="24" />
+                                </TransitionCollection>
+                            </Grid.Transitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <StackPanel x:Name="DashboardClockStack" Spacing="2" HorizontalAlignment="Center">
+                                <TextBlock x:Name="ClockTextBlock" Text="00:00:00" FontSize="64" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                <TextBlock x:Name="DateTextBlock" FontSize="14" FontWeight="SemiBold" CharacterSpacing="190" Foreground="{ThemeResource TextFillColorSecondaryBrush}" HorizontalAlignment="Center" />
+                            </StackPanel>
+
+                            <Border Grid.Row="1" x:Name="StatusCard" CornerRadius="24" Padding="28" Background="#12B886" MinHeight="360" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <Grid>
+                                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="14">
+                                        <TextBlock x:Name="LockStateTextBlock" Text="SYSTEM UNLOCKED" FontSize="30" FontWeight="Bold" Foreground="White" TextAlignment="Center" />
+                                        <Border x:Name="CountdownRingBorder" Width="142" Height="142" CornerRadius="71" BorderThickness="5" BorderBrush="#F4FFFB">
+                                            <StackPanel VerticalAlignment="Center" Spacing="6">
+                                                <TextBlock x:Name="CountdownTextBlock" Text="05:00" FontSize="38" FontWeight="Bold" Foreground="White" TextAlignment="Center" />
+                                                <TextBlock x:Name="RemainingTextBlock" Text="REMAINING" FontSize="11" FontWeight="Bold" CharacterSpacing="130" Foreground="White" TextAlignment="Center" />
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock x:Name="FaceStateTextBlock" Text="Active session expires soon" FontSize="18" FontWeight="SemiBold" Foreground="White" TextAlignment="Center" />
+                                        <Button x:Name="ManualLockButton" Click="ManualLockButton_Click" Width="240" Height="54" CornerRadius="12" Background="#FAFAFA" Foreground="#21845D" HorizontalAlignment="Center" HorizontalContentAlignment="Center">
+                                            <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+                                                <FontIcon x:Name="ManualLockIcon" Glyph="&#xE785;" FontSize="16" />
+                                                <TextBlock x:Name="ManualLockButtonText" Text="MANUAL LOCK" FontWeight="Bold" CharacterSpacing="120" />
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+
+                                    <Button x:Name="DashboardUsersButton" Click="ViewDashboardUsersButton_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" MinWidth="126">
+                                        <StackPanel Orientation="Horizontal" Spacing="8">
+                                            <FontIcon Glyph="&#xE716;" FontSize="16" />
+                                            <TextBlock Text="Users" />
+                                            <TextBlock x:Name="DashboardUsersCountTextBlock" Text="0" FontWeight="SemiBold" />
+                                        </StackPanel>
+                                    </Button>
+                                    <FontIcon x:Name="StatusIcon" Glyph="&#xE785;" Visibility="Collapsed" />
+                                </Grid>
+                            </Border>
+                        </Grid>
+
+                        <views:RecognitionView x:Name="RecognitionPage" Visibility="Collapsed">
+                            <views:RecognitionView.Transitions>
+                                <TransitionCollection>
+                                    <EntranceThemeTransition FromHorizontalOffset="24" />
+                                </TransitionCollection>
+                            </views:RecognitionView.Transitions>
+                        </views:RecognitionView>
+
+                        <Grid x:Name="FaceDataPage" Visibility="Collapsed" RowSpacing="14">
+                            <Grid.Transitions>
+                                <TransitionCollection>
+                                    <EntranceThemeTransition FromHorizontalOffset="24" />
+                                </TransitionCollection>
+                            </Grid.Transitions>
+                                                        <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <StackPanel Spacing="4">
+                                <TextBlock Text="Face Data" Style="{StaticResource PageTitleStyle}" />
+                                <TextBlock Text="Import and export users, embeddings, and face photos." Style="{StaticResource SmallLabelStyle}" />
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Spacing="8">
+                                <InfoBar x:Name="FaceDataInfoBar" IsOpen="False" IsClosable="True" />
+                                <ProgressBar x:Name="FaceDataProgressBar" IsIndeterminate="True" Visibility="Collapsed" />
+                            </StackPanel>
+                            <Grid Grid.Row="2" ColumnSpacing="20" RowSpacing="20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Border Style="{StaticResource CardBorderStyle}">
+                                    <StackPanel Spacing="14">
+                                        <TextBlock Text="Export Face Data" FontSize="20" FontWeight="SemiBold" />
+                                        <TextBlock Text="Create a ZIP backup from this PC to a local folder or SMB/server path." Style="{StaticResource SmallLabelStyle}" />
+                                        <ComboBox x:Name="ExportModeComboBox" Header="Export to" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="ExportModeComboBox_SelectionChanged">
+                                            <ComboBoxItem Content="Local folder" />
+                                            <ComboBoxItem Content="SMB/server path" />
+                                        </ComboBox>
+                                                                                <Grid ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox x:Name="ExportFolderTextBox" Header="Local export folder" PlaceholderText="Choose a folder on this PC" />
+                                            <Button x:Name="SelectExportFolderButton" Grid.Column="1" Click="SelectExportFolderButton_Click" VerticalAlignment="Bottom" ToolTipService.ToolTip="Choose export folder">
+                                                <StackPanel Orientation="Horizontal" Spacing="8">
+                                                    <FontIcon Glyph="&#xE838;" FontSize="14" />
+                                                    <TextBlock Text="Browse" />
+                                                </StackPanel>
+                                            </Button>
+                                        </Grid>
+                                        <StackPanel x:Name="ExportSmbCredentialPanel" Spacing="10" Visibility="Collapsed">
+                                            <TextBox x:Name="ExportSmbUsernameTextBox" Header="NTID" PlaceholderText="Username" />
+                                            <PasswordBox x:Name="ExportSmbPasswordBox" Header="Password" />
+                                        </StackPanel>
+                                        <Button x:Name="ExportFaceDataButton" Click="ExportFaceDataButton_Click" HorizontalAlignment="Left">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <FontIcon Glyph="&#xE896;" FontSize="14" />
+                                                <TextBlock Text="Export" />
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                </Border>
+                                <Border Grid.Column="1" Style="{StaticResource CardBorderStyle}">
+                                    <StackPanel Spacing="14">
+                                        <TextBlock Text="Import Face Data" FontSize="20" FontWeight="SemiBold" />
+                                        <TextBlock Text="Import a ZIP from this PC or from an SMB/server path into the local SAS dataset." Style="{StaticResource SmallLabelStyle}" />
+                                        <ComboBox x:Name="ImportModeComboBox" Header="Import from" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="ImportModeComboBox_SelectionChanged">
+                                            <ComboBoxItem Content="Local ZIP" />
+                                            <ComboBoxItem Content="SMB/server ZIP path" />
+                                        </ComboBox>
+                                                                                <Grid ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox x:Name="ImportZipTextBox" Header="Local ZIP path" PlaceholderText="Choose a SAS face dataset ZIP" />
+                                            <Button x:Name="SelectImportZipButton" Grid.Column="1" Click="SelectImportZipButton_Click" VerticalAlignment="Bottom" ToolTipService.ToolTip="Choose import ZIP">
+                                                <StackPanel Orientation="Horizontal" Spacing="8">
+                                                    <FontIcon Glyph="&#xE8E5;" FontSize="14" />
+                                                    <TextBlock Text="Browse" />
+                                                </StackPanel>
+                                            </Button>
+                                        </Grid>
+                                        <StackPanel x:Name="ImportSmbCredentialPanel" Spacing="10" Visibility="Collapsed">
+                                            <TextBox x:Name="ImportSmbUsernameTextBox" Header="NTID" PlaceholderText="Username" />
+                                            <PasswordBox x:Name="ImportSmbPasswordBox" Header="Password" />
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Spacing="10">
+                                            <Button x:Name="ImportFaceDataButton" Click="ImportFaceDataButton_Click">
+                                                <StackPanel Orientation="Horizontal" Spacing="8">
+                                                    <FontIcon Glyph="&#xE8B5;" FontSize="14" />
+                                                    <TextBlock Text="Import" />
+                                                </StackPanel>
+                                            </Button>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+                        </Grid>
+
+                        <views:LogsView x:Name="LogsPage" Visibility="Collapsed" />
+
+                        <Grid x:Name="SettingsPage" Visibility="Collapsed" RowSpacing="20">
+                            <Grid.Transitions>
+                                <TransitionCollection>
+                                    <EntranceThemeTransition FromHorizontalOffset="24" />
+                                </TransitionCollection>
+                            </Grid.Transitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Spacing="4">
+                                    <TextBlock Text="Settings" Style="{StaticResource PageTitleStyle}" />
+                                    <TextBlock Text="RTSP camera connection, server path, camera orientation, and lock options." Style="{StaticResource SmallLabelStyle}" />
+                                </StackPanel>
+                            </Grid>
+
+                            <Grid Grid.Row="1" ColumnSpacing="20" RowSpacing="20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Border Style="{StaticResource CardBorderStyle}">
+                                    <StackPanel Spacing="14">
+                                        <TextBlock Text="RTSP JabilEye Stream" FontSize="20" FontWeight="SemiBold" />
+                                        <ComboBox x:Name="CameraSourceComboBox" Header="Camera source" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="CameraSourceComboBox_SelectionChanged" Visibility="Collapsed">
+                                            <ComboBoxItem Content="RTSP camera" />
+                                        </ComboBox>
+                                        <ComboBox x:Name="WebcamIndexComboBox" Header="Legacy camera index" SelectedIndex="0" HorizontalAlignment="Stretch" Visibility="Collapsed">
+                                            <ComboBoxItem Content="0" />
+                                            <ComboBoxItem Content="1" />
+                                            <ComboBoxItem Content="2" />
+                                        </ComboBox>
+                                        <TextBox x:Name="CameraHostTextBox" Header="Camera hostname/IP" PlaceholderText="mypenrpieye" LostFocus="SettingsControl_SaveOnLostFocus" />
+                                        <TextBox x:Name="CameraRtspUserTextBox" Header="Username" PlaceholderText="admin" LostFocus="SettingsControl_SaveOnLostFocus" />
+                                        <PasswordBox x:Name="CameraRtspPasswordBox" Header="Password" LostFocus="SettingsControl_SaveOnLostFocus" />
+                                        <TextBox x:Name="RtspPortTextBox" Header="RTSP port" PlaceholderText="8554" InputScope="Number" Visibility="Collapsed" />
+                                        <StackPanel Orientation="Horizontal" Spacing="10">
+                                            <Button x:Name="ConnectPiButton"
+                                                    Click="StartRecognitionButton_Click"
+                                                    Content="Connect"
+                                                    Background="White"
+                                                    Foreground="Black"
+                                                    BorderBrush="#C7D4DC">
+                                                <Button.Resources>
+                                                    <SolidColorBrush x:Key="ButtonBackground" Color="White" />
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#F4F8FB" />
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#E7F0F6" />
+                                                    <SolidColorBrush x:Key="ButtonBackgroundDisabled" Color="#EEF3F6" />
+                                                    <SolidColorBrush x:Key="ButtonForeground" Color="Black" />
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black" />
+                                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black" />
+                                                    <SolidColorBrush x:Key="ButtonForegroundDisabled" Color="#4B5961" />
+                                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#C7D4DC" />
+                                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#9AAAB4" />
+                                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#81919B" />
+                                                    <SolidColorBrush x:Key="ButtonBorderBrushDisabled" Color="#D8E0E5" />
+                                                </Button.Resources>
+                                            </Button>
+                                            <ProgressRing x:Name="ConnectPiProgressRing" Width="22" Height="22" IsActive="False" Visibility="Collapsed" />
+                                            <TextBlock x:Name="SettingsCameraStatusTextBlock" Text="Status: Disconnected" VerticalAlignment="Center" Style="{StaticResource SmallLabelStyle}" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+
+                                <Border Grid.Column="1" Style="{StaticResource CardBorderStyle}">
+                                    <StackPanel Spacing="14">
+                                        <TextBlock Text="Server Mount" FontSize="20" FontWeight="SemiBold" />
+                                        <TextBox x:Name="RtspUserTextBox" Header="NTID" LostFocus="SettingsControl_SaveOnLostFocus" />
+                                        <PasswordBox x:Name="RtspPasswordBox" Header="Password" LostFocus="SettingsControl_SaveOnLostFocus" />
+                                        <Grid ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox x:Name="RtspPathTextBox" Header="Server save path" PlaceholderText="//server/share or /mnt/server" LostFocus="SettingsControl_SaveOnLostFocus" />
+                                            <Button x:Name="SelectServerMountPathButton" Grid.Column="1" Click="SelectServerMountPathButton_Click" VerticalAlignment="Bottom" ToolTipService.ToolTip="Choose server save path">
+                                                <StackPanel Orientation="Horizontal" Spacing="8">
+                                                    <FontIcon Glyph="&#xE838;" FontSize="14" />
+                                                    <TextBlock Text="Browse" />
+                                                </StackPanel>
+                                            </Button>
+                                        </Grid>
+                                        <Button x:Name="MountServerButton" Click="MountServerButton_Click" HorizontalAlignment="Left">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <FontIcon Glyph="&#xE8CE;" FontSize="14" />
+                                                <TextBlock Text="Save" />
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                </Border>
+
+                                <Border Grid.Column="2" Style="{StaticResource CardBorderStyle}">
+                                    <StackPanel Spacing="14">
+                                        <TextBlock Text="Camera Orientation" FontSize="20" FontWeight="SemiBold" />
+                                        <ComboBox x:Name="CameraRotationComboBox" Header="Rotation" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="SettingsControl_SaveOnSelectionChanged">
+                                            <ComboBoxItem Content="0" />
+                                            <ComboBoxItem Content="90" />
+                                            <ComboBoxItem Content="180" />
+                                            <ComboBoxItem Content="270" />
+                                        </ComboBox>
+                                    </StackPanel>
+                                </Border>
+                                <Border Grid.Row="1" Grid.ColumnSpan="3" Style="{StaticResource CardBorderStyle}">
+                                    <StackPanel Spacing="14">
+                                        <TextBlock Text="Lock Behavior" FontSize="20" FontWeight="SemiBold" />
+                                        <StackPanel Spacing="6">
+                                            <TextBlock Text="Lock after inactivity" />
+                                            <Grid ColumnSpacing="12" HorizontalAlignment="Left">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="160" />
+                                                    <ColumnDefinition Width="150" />
+                                                </Grid.ColumnDefinitions>
+                                                <NumberBox
+                                                    x:Name="LockTimeoutValueBox"
+                                                    Minimum="1"
+                                                    Maximum="999"
+                                                    SmallChange="1"
+                                                    LargeChange="5"
+                                                    SpinButtonPlacementMode="Hidden"
+                                                    LostFocus="LockTimeoutControl_LostFocus" />
+                                                <ComboBox
+                                                    x:Name="LockTimeoutUnitComboBox"
+                                                    Grid.Column="1"
+                                                    SelectedIndex="1"
+                                                    HorizontalAlignment="Stretch"
+                                                    SelectionChanged="SettingsControl_SaveOnSelectionChanged">
+                                                    <ComboBoxItem Content="seconds" />
+                                                    <ComboBoxItem Content="minutes" />
+                                                    <ComboBoxItem Content="hours" />
+                                                </ComboBox>
+                                            </Grid>
+                                            <TextBlock Text="The workstation locks when no keyboard or mouse activity is detected." Style="{StaticResource SmallLabelStyle}" />
+                                        </StackPanel>
+                                        <ToggleSwitch x:Name="DisableKeyboardToggle" Header="Disable keyboard while locked" Toggled="SettingsControl_SaveOnToggle" />
+                                        <ToggleSwitch x:Name="DisableMouseToggle" Header="Disable mouse while locked" Toggled="SettingsControl_SaveOnToggle" />
+                                    </StackPanel>
+                                </Border>
+
+                                <Border Grid.Row="2" Grid.ColumnSpan="3" Style="{StaticResource CardBorderStyle}">
+                                    <StackPanel Spacing="14">
+                                        <TextBlock Text="Administrators" FontSize="20" FontWeight="SemiBold" />
+                                        <TextBlock Text="Add NTIDs that can manage recognition, face data, and settings." Style="{StaticResource SmallLabelStyle}" />
+                                        <Grid ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox x:Name="AdminNtidTextBox" Header="Admin NTID" PlaceholderText="Enter NTID" />
+                                            <Button Grid.Column="1" Click="AddAdminButton_Click" VerticalAlignment="Bottom" MinWidth="96">
+                                                <StackPanel Orientation="Horizontal" Spacing="8">
+                                                    <FontIcon Glyph="&#xE710;" FontSize="14" />
+                                                    <TextBlock Text="Add" />
+                                                </StackPanel>
+                                            </Button>
+                                        </Grid>
+                                        <ListView x:Name="AdminListView" SelectionMode="None" MaxHeight="180">
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Padding="0,6" ColumnSpacing="12">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="{Binding}" VerticalAlignment="Center" FontWeight="SemiBold" />
+                                                        <Button Grid.Column="1" Click="RemoveAdminButton_Click" Tag="{Binding}" ToolTipService.ToolTip="Remove administrator">
+                                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                                <FontIcon Glyph="&#xE74D;" FontSize="14" />
+                                                                <TextBlock Text="Remove" />
+                                                            </StackPanel>
+                                                        </Button>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </ScrollViewer>
+            </Grid>
+        </NavigationView>
+    </Grid>
+</Page>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

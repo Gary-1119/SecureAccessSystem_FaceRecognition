@@ -1,0 +1,6 @@
+# Pi InsightFace recognition dependencies
+# Install Picamera2/OpenCV with apt on Raspberry Pi OS when possible:
+#   sudo apt install -y python3-picamera2 python3-opencv
+numpy>=1.24,<3
+onnxruntime>=1.17
+insightface==0.7.3

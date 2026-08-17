@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SAS (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SAS (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

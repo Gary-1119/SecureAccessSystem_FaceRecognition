@@ -1,0 +1,9 @@
+bin/
+obj/
+dist/
+_build_verify/
+SASwinUI3/build-checkViews/
+.vs/
+*.user
+*.suo
+*.log

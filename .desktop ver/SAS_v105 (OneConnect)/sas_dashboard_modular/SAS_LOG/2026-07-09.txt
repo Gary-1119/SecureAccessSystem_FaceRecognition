@@ -1,0 +1,196 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-09
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+14:08:55 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:08:56 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:09:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:09:09 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+14:10:51 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+14:14:37 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:18:40 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:18:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:18:46 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE001 · Result: Failed
+14:18:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:18:52 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+14:18:56 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+14:19:03 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+14:19:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:19:25 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 → JEFACE1111 · Inactivity lock: 30:00 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 180°
+14:20:12 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:20:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:20:18 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:23:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:33:20 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:33:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:47:42 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:47:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:48:19 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+14:48:33 | ADMIN                | PI CONNECTION BLOCKED        | Requested host: JEFACE1111 · Result: Already connected
+14:52:59 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE010 · Result: Failed
+14:53:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:05:42 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:05:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:05:46 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+15:06:03 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:06:04 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE011 · Result: Failed
+15:06:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:06:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:06:43 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE011 · Result: Manual disconnect
+15:06:59 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:06:59 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE011223 · Result: Failed
+15:07:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:07:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:07:38 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:07:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:16:53 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+15:16:53 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:16:58 | 4372447              | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+15:17:14 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:17:14 | 4372447              | PI CONNECTION FAILED         | Requested host: JEFACE1342328 · Result: Failed
+15:17:54 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:18:06 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:18:07 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:18:09 | 4372447              | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+15:18:24 | 4372447              | PI CONNECTION FAILED         | Requested host: JEFACE111134535 · Result: Failed
+15:18:30 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:18:53 | 4372447              | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+15:19:14 | 4372447              | PI CONNECTION FAILED         | Requested host: JEFACE11111436 · Result: Failed
+15:19:15 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:19:44 | 4372447              | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+15:19:55 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:20:19 | 4372447              | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE1111 → JEFACE111134 · Inactivity lock: 30:00 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 270°
+15:20:40 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:20:43 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:20:44 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:20:44 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:20:45 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:26:43 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:26:48 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:33:33 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:33:33 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:33:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:33:53 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:33:53 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:34:02 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:34:03 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:34:10 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+15:34:14 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:34:29 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE111134 → JEFACE1111 · Inactivity lock: 30:00 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 270°
+15:34:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:34:59 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:35:02 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:35:15 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:38:00 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:38:12 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+15:38:16 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:38:23 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE11117547376 · Result: Failed
+15:38:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:38:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:39:15 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+15:39:17 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+15:39:23 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE11117347389 · Result: Failed
+15:39:25 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:39:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:40:00 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+15:40:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:40:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:59:02 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:59:02 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:59:05 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+15:59:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:59:22 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE1112538 · Result: Failed
+15:59:30 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE1111 → JEFACE1112538 · Inactivity lock: 30:00 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 270°
+15:59:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:59:57 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE1112538 · Inactivity lock: 30:00 · Disabled while locked: Keyboard, Mouse → Keyboard · Auto capture: Enabled · Camera rotation: 90°
+15:59:59 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:00:16 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+16:00:26 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE1112538 → JEFACE1111 · Inactivity lock: 30:00 · Disabled while locked: Keyboard · Auto capture: Enabled · Camera rotation: 270°
+16:00:26 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:00:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:00:33 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 0 · Admin: PI · Method: Settings
+16:00:34 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:00:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:00:41 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 180 · Admin: PI · Method: Settings
+16:00:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:00:53 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:00:55 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:00:59 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:02:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:02:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:02:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:02:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:02:45 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:12:25 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+16:12:26 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:12:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:12:33 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:12:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:12:45 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE1111 · Inactivity lock: 30:00 · Disabled while locked: Keyboard → Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 180°
+16:13:43 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE1111 · Inactivity lock: 30:00 · Disabled while locked: Keyboard, Mouse → Keyboard · Auto capture: Enabled · Camera rotation: 180°
+16:13:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:13:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:13:47 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+16:14:03 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE111136553 · Result: Failed
+16:14:04 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:14:10 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE1111 → JEFACE111136553 · Inactivity lock: 30:00 · Disabled while locked: Keyboard · Auto capture: Enabled · Camera rotation: 180°
+16:14:14 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:14:20 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+16:17:00 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+16:17:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:17:09 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+16:17:48 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE111136553 → JEFACE1111 · Inactivity lock: 30:00 · Disabled while locked: Keyboard · Auto capture: Enabled · Camera rotation: 180°
+16:17:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:17:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:17:56 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+16:17:56 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+16:17:59 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+16:17:59 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+16:17:59 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE1111 · API port: 5000 · Oneconnect: Normal connect
+16:18:02 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACE1111 · Result: Manual disconnect
+16:18:08 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE111197428934 · Result: Failed
+16:18:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:18:14 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE111197428934 · Result: Failed
+16:18:15 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:18:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:18:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:18:49 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:24:05 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:24:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:25:25 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:25:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:25:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:25:50 | ADMIN                | LOGOUT                       | —
+17:25:58 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:25:58 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:26:23 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:26:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:26:48 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:26:53 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:42:30 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:45:11 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:45:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:45:27 | ADMIN                | LOGOUT                       | —
+17:45:37 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:45:38 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:45:42 | ADMIN                | LOGOUT                       | —
+17:46:00 | 4372447              | LOGIN FAILED                 | Method: Active Directory · Result: Failed
+17:49:08 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:49:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:49:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:52:37 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:52:45 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:52:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:52:57 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+19:56:37 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+19:56:49 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+19:57:43 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+19:57:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+19:58:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+19:58:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+19:59:18 | 4372447              | LOGIN FAILED                 | Method: Active Directory · Result: Failed
+19:59:30 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+19:59:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings

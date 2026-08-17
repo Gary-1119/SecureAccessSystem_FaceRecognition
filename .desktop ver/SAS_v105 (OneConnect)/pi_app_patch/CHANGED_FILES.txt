@@ -1,0 +1,11 @@
+Pi App Patch v106 One-Pi Session
+
+Modified:
+- face_api.py — Adds /sas/session, /sas/connect, /sas/disconnect, /sas/heartbeat endpoints and reports active SAS owner in /status.
+- websocket_service.py — Enforces one active SAS owner, rejects duplicate SAS connections, supports force takeover, and sends unlock events only to the owner.
+
+Added:
+- None
+
+Deleted:
+- None

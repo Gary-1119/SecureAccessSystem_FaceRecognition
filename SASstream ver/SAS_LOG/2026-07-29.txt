@@ -1,0 +1,18 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-29
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+15:36:49 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:36:49 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:36:56 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+15:36:58 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:37:39 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: 10.122.139.101 · Result: Failed
+15:37:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:46:27 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: 10.122.139.101 · Result: Failed
+15:46:27 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:46:43 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+15:46:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:46:55 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings

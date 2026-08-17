@@ -1,0 +1,21 @@
+Pi App Patch v119 — Auto-delete Temporary ZIP on Close
+
+MODIFIED
+- multi_sftp_transfer.py
+  Removed the manual Delete Temp ZIP button.
+  Close/× automatically deletes the temporary ZIP after the transfer has stopped.
+
+NOT CHANGED
+- gui.py
+- face_service.py
+- face_api.py
+- sftp_target.txt
+- Settings UI and Settings functions
+- hostname/reboot
+- server credentials
+- camera rotation
+- storage
+- multi-Pi worker queue (maximum 4 active uploads)
+- SFTP transfer protocol
+- SMB, recognition, and TTY5 service
+- SAS Windows app

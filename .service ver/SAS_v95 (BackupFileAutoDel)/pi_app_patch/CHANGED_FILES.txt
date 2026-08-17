@@ -1,0 +1,31 @@
+Pi App Patch v106 — Recognition Result Cleanup and Delete-Backup Retention
+
+Added
+1. backup_retention.py
+   - Deletes only pre-delete user/encoding backups older than 30 days.
+   - Does not touch received_face_data/pending or import ZIP backups.
+
+Modified
+2. recog.py
+   - Keeps one live recognition_result.json file.
+   - Uses one fixed .tmp file during atomic writes.
+   - Removes stale recognition_result.json.tmp* files locally at startup and on
+     SMB reconnect before server publishing.
+
+3. gui.py
+   - Starts daily 30-day delete-backup retention cleanup.
+   - Runs retention cleanup after local/API delete operations.
+
+4. face_service.py
+   - Runs retention cleanup after API/SAS user deletion.
+
+5. README.md
+   - Deployment, retention scope, and testing information.
+
+Not changed
+- capture.py
+- train.py
+- face_api.py
+- camera_rotation.py
+- TTY5 service files
+- Pending import ZIP backups and import/export workflow

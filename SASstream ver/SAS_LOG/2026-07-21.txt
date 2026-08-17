@@ -1,0 +1,131 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-21
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+07:41:32 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+07:41:33 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+07:41:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:41:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+07:41:50 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+07:41:51 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+07:41:54 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:42:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:42:58 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+07:43:23 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:43:26 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:43:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:43:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+07:43:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:43:58 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+07:44:00 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 180 · Admin: LOCAL_RTSP · Method: Settings
+07:44:09 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Camera Host: jbleyepoc035 · Inactivity lock: 05:00 · Disabled while locked: Keyboard · Camera rotation: 180°
+07:44:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:44:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+07:44:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+07:47:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+07:48:54 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_LOCAL · Confidence: 80.23% · Camera Host: JBLEYEPOC035 · Event Id: 65d7bf87-a56d-4437-b81b-df47a9e3d3dc
+08:10:23 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_LOCAL · Confidence: 74.0% · Camera Host: JBLEYEPOC035 · Event Id: d04ea3db-e59d-49d0-8cc8-d36b81055f1b
+08:29:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:29:56 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:29:57 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:30:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:30:08 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:30:10 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+08:30:10 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+08:30:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:31:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:31:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:32:15 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:32:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:32:34 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:32:56 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+08:45:12 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+08:45:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:45:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:45:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:45:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:53:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:53:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:53:18 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 0 · Admin: LOCAL_RTSP · Method: Settings
+08:53:21 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Camera Host: jbleyepoc035 · Inactivity lock: 05:00 · Disabled while locked: Keyboard · Camera rotation: 0°
+09:22:24 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:53:05 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:53:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:53:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:53:34 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:53:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:53:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:53:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:53:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:53:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:54:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:54:04 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:54:07 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:54:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:54:18 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:54:29 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:54:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:54:49 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:58:20 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:58:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:59:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:59:13 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+14:59:14 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+14:59:16 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:07:47 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:07:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:07:54 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:14:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:14:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:14:37 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:14:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:14:58 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:15:45 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Camera Host: jbleyepoc035 · Inactivity lock: 05:00 · Disabled while locked: Keyboard · Camera rotation: 0°
+15:16:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:16:34 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:16:34 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:17:06 | ADMIN                | FACE USER REGISTER FAILED    | Name: Nor Rani · Employee Id: 188196 · Result: Failed
+15:17:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:18:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:18:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:18:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:21:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:22:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:22:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:22:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:22:41 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:22:48 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:22:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:22:55 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Camera Host: jbleyepoc035 · Inactivity lock: 05:00 · Disabled while locked: Keyboard → Keyboard, Mouse · Camera rotation: 0°
+15:22:57 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:23:09 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:25:40 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+15:25:41 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:25:43 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:25:49 | 4372447              | FACE USER REGISTER FAILED    | Name: NorRani · Employee Id: 188196 · Result: Failed
+15:27:26 | 4372447              | FACE USER REGISTERED         | Name: NorRani · Employee Id: 188196 · Embeddings: 1 · Result: Registered NorRani (188196).
+15:28:31 | 4372447              | FACE USER DELETED            | Employee Id: 188196 · Dataset removed: No · Embeddings Removed: 0
+15:40:37 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:40:37 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:41:00 | ADMIN                | FACE USER REGISTER BLOCKED   | Name: NorRani · Employee Id: 188196 · Result: AD validation failed · Reason: NTID does not exist in Active Directory.
+15:41:07 | ADMIN                | FACE USER REGISTER BLOCKED   | Name: NorRani · Employee Id: 188196 · Result: AD validation failed · Reason: NTID does not exist in Active Directory.
+15:41:36 | ADMIN                | LOGOUT                       | —
+15:41:46 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+15:41:46 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:41:54 | 4372447              | FACE USER REGISTER BLOCKED   | Name: NorRani · Employee Id: 188196 · Result: AD validation failed · Reason: NTID does not exist in Active Directory.
+15:43:42 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:43:44 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:44:28 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:46:34 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+15:46:34 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:46:55 | 4372447              | FACE REGISTER BUTTON PRESSED | Name: NorRani · Employee Id: 188196 · Result: Register button pressed
+15:46:55 | 4372447              | FACE USER REGISTER BLOCKED   | Name: NorRani · Employee Id: 188196 · Result: AD validation failed · Reason: NTID does not exist in Active Directory.
+15:48:22 | 4372447              | FACE REGISTER BUTTON PRESSED | Name: Gary · Employee Id: 4372447 · Result: Register button pressed
+15:48:23 | 4372447              | FACE USER REGISTERED         | Name: Gary · Employee Id: 4372447 · Embeddings: 2 · Result: Registered Gary (4372447).
+15:48:45 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+16:10:53 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:11:47 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:11:52 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings

@@ -1,0 +1,23 @@
+Pi App Patch v120 — Active Directory Password Login
+
+MODIFIED
+- gui.py
+  - Login popup now collects NTID and password.
+  - Normal login validates through IsUserExistsInAD -> DESEncrypt -> ValidateUserCredentialsInAD.
+  - Adds requested local developer administrator: admin / penAteam.
+  - Developer account is an admin without being written to admins.txt.
+
+NOT CHANGED
+- multi_sftp_transfer.py
+- sftp_target.txt
+- face_service.py
+- face_api.py
+- system_control.py
+- system_storage.py
+- camera rotation
+- hostname/reboot
+- storage display
+- SMB, import/export, Check Received
+- Settings scrolling/layout
+- TTY5 service
+- SAS Windows application

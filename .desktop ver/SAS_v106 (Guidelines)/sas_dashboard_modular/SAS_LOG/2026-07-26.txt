@@ -1,0 +1,10 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-26
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+15:16:04 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:16:14 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:16:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings

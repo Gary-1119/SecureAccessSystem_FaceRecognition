@@ -1,0 +1,315 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-27
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+09:12:05 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+09:12:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:12:16 | ADMIN                | PI CONNECTED                 | Pi host: JEFACEDESKTOP · API port: 5000 · Oneconnect: Normal connect
+09:12:19 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACESERVICE → JEFACEDESKTOP · Inactivity lock: 05:00 · Disabled while locked: Keyboard · Auto capture: Disabled · Camera rotation: 180°
+09:12:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+09:14:25 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+09:14:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:30:50 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:31:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:31:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:15:33 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+11:15:33 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:15:50 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:17:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:18:00 | ADMIN                | FACE USER REGISTERED         | Name: Gary · Employee Id: 4372447 · Samples: 2 · Model: InsightFace buffalo_s
+11:18:13 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 86.4% · Pi host: JEFACEDESKTOP · Event Id: 955f44d3-b7ae-47c6-8e88-309fa9ed69fc
+11:18:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:18:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:18:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:18:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:19:14 | ADMIN                | FACE DATA EXPORTED TO SERVER | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · ZIP file: face_data_20260727_111914.zip
+11:19:40 | ADMIN                | FACE DATA DOWNLOADED TO LOCAL | Pi host: JEFACEDESKTOP · ZIP file: face_data_20260727_111939.zip · Local folder: C:\Temp
+11:20:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:20:36 | ADMIN                | FACE USER DELETE FAILED      | Face ID: 4372447 · Result: Failed
+11:20:49 | ADMIN                | FACE USER DELETE FAILED      | Face ID: 4372447 · Result: Failed
+11:21:01 | ADMIN                | FACE USER DELETED            | Face ID: 4372447 · Dataset removed: Yes · Embeddings removed: 2
+11:21:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:21:31 | ADMIN                | FACE DATA IMPORTED FROM SERVER | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · ZIP file: face_data_20260727_111914.zip · Imported users: 4372447
+11:21:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:21:38 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:22:01 | ADMIN                | FACE DATA IMPORTED FROM LOCAL | Local Zip: C:\Temp\face_data_20260727_111939.zip · ZIP file: face_data_20260727_111939.zip · Imported users: No new users
+11:22:08 | ADMIN                | RECEIVED FACE DATA IMPORTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260727_100420.zip · Imported users: 4372447, 4401760
+11:22:21 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACEDESKTOP · Inactivity lock: 05:00 · Disabled while locked: Keyboard · Auto capture: Disabled · Camera rotation: 180°
+11:22:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:23:40 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:25:30 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+11:25:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:25:44 | ADMIN                | FACE USER DELETE FAILED      | Face ID: 4372447 · Result: Failed
+11:27:26 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+11:27:27 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:27:34 | ADMIN                | FACE USER DELETED            | Face ID: 4372447 · Dataset removed: Yes · Embeddings removed: 5
+11:27:54 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:28:00 | ADMIN                | RECEIVED FACE DATA IMPORTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260727_112207.zip · Imported users: 4372447
+11:28:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:28:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:28:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:02:37 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:02:37 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:03:06 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 78.0% · Pi host: JEFACEDESKTOP · Event Id: 8c9664db-0aec-470a-8782-6a056966ce2a
+12:03:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:03:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:06:35 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:06:35 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:06:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:06:50 | ADMIN                | FACE USER REGISTERED         | Name: Gary · Employee Id: 4372447 · Samples: 3 · Model: InsightFace buffalo_s
+12:07:03 | ADMIN                | FACE USER REGISTERED         | Name: Gary · Employee Id: 4372447 · Samples: 4 · Model: InsightFace buffalo_s
+12:07:16 | ADMIN                | FACE USER DELETED            | Face ID: 4372447 · Dataset removed: Yes · Embeddings removed: 4
+12:07:25 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:07:26 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:07:29 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:07:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:07:43 | ADMIN                | FACE USER DELETED            | Face ID: 4401760 · Dataset removed: Yes · Embeddings removed: 1
+12:09:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:09:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:10:39 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:10:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:10:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:10:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:10:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:10:55 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:11:04 | ADMIN                | RECEIVED FACE DATA IMPORTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260727_112800.zip · Imported users: 4401760
+12:11:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:11:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:11:21 | ADMIN                | RECEIVED FACE DATA IMPORTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260727_121103.zip · Imported users: No new users
+12:11:27 | ADMIN                | RECEIVED FACE DATA IMPORTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260727_112130.zip · Imported users: No new users
+12:11:33 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:11:35 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:11:39 | ADMIN                | RECEIVED FACE DATA REJECTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260727_112201.zip
+12:11:40 | ADMIN                | RECEIVED FACE DATA REJECTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260727_121127.zip
+12:11:42 | ADMIN                | RECEIVED FACE DATA IMPORTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260727_121121.zip · Imported users: No new users
+12:12:15 | ADMIN                | FACE DATA IMPORTED FROM SERVER | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · ZIP file: face_data_20260727_111914.zip · Imported users: 4372447
+12:12:23 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:12:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:12:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:12:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:13:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:13:09 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACEDESKTOP · Inactivity lock: 05:00 → 00:05 · Disabled while locked: Keyboard · Auto capture: Disabled · Camera rotation: 180°
+12:13:23 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 71.0% · Pi host: JEFACEDESKTOP · Event Id: 19852550-7db6-4672-9d00-2c742bef4190
+12:13:34 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 74.6% · Pi host: JEFACEDESKTOP · Event Id: 90f66dea-d44b-4584-8545-983a6ac1c7cb
+12:13:43 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 74.2% · Pi host: JEFACEDESKTOP · Event Id: 4b154af0-97f7-4bf9-89a6-105c9395522c
+12:14:02 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 66.5% · Pi host: JEFACEDESKTOP · Event Id: 83ef15df-6e65-42cf-a3f8-23b41f2d85ad
+12:17:31 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 78.4% · Pi host: JEFACEDESKTOP · Event Id: 184bcae9-e391-429e-9e98-ee3faddc86db
+12:18:05 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 76.1% · Pi host: JEFACEDESKTOP · Event Id: 95fc66b8-0729-4812-84a9-901984c0d5ed
+12:18:14 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 79.6% · Pi host: JEFACEDESKTOP · Event Id: 070d5a1b-c773-41c0-b16d-a082014820e3
+12:18:24 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 71.0% · Pi host: JEFACEDESKTOP · Event Id: 07e17d55-d9e1-4fe0-8ffc-830eb2d0f6e2
+12:19:01 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 76.6% · Pi host: JEFACEDESKTOP · Event Id: 998d6a21-e75c-4b15-bace-9109ac020454
+12:19:22 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 73.7% · Pi host: JEFACEDESKTOP · Event Id: 90a43d82-aa19-475b-99cf-be4e2696168b
+12:19:29 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 39.7% · Pi host: JEFACEDESKTOP · Event Id: bb573b31-2e31-452d-a3f7-fe26c61e38c6
+12:24:53 | MANUAL               | UNLOCKED                     | Method: Manual
+12:25:39 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+12:25:45 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+12:25:48 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+12:25:49 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+12:29:35 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 41.9% · Pi host: JEFACEDESKTOP · Event Id: 4065797e-7b9f-414d-a093-b17437e786ce
+12:29:42 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 44.4% · Pi host: JEFACEDESKTOP · Event Id: 40257a95-ceae-4d07-b40f-eb32f89ea92a
+12:29:49 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 48.3% · Pi host: JEFACEDESKTOP · Event Id: 418cb01c-3a69-48a6-b0aa-e8f1c3567037
+12:30:58 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 69.0% · Pi host: JEFACEDESKTOP · Event Id: 8e8b5d29-ed39-479f-8449-dcf26793f708
+12:31:52 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 57.1% · Pi host: JEFACEDESKTOP · Event Id: 8c35eacd-5ce5-43cd-9bb7-5f2d16bc4836
+12:32:56 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 76.0% · Pi host: JEFACEDESKTOP · Event Id: ff4e5280-5d4d-4bf7-99fe-c474776fa0f1
+12:33:32 | MANUAL               | UNLOCKED                     | Method: Manual
+12:34:19 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:34:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:34:28 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACEDESKTOP · Inactivity lock: 00:05 → 00:10 · Disabled while locked: Keyboard · Auto capture: Disabled · Camera rotation: 180°
+12:35:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:35:54 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:35:58 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:36:50 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+12:41:52 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 42.4% · Pi host: JEFACEDESKTOP · Event Id: bb54606a-91ef-4508-8620-edb194bc735a
+12:44:12 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:44:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:44:39 | ADMIN                | FACE USER REGISTERED         | Name: Gary · Employee Id: 4372447 · Samples: 3 · Model: InsightFace buffalo_s
+12:45:03 | ADMIN                | FACE USER REGISTRATION FAILED | Name: Gary · Employee Id: 4372447 · Result: Failed
+12:45:14 | ADMIN                | FACE USER REGISTERED         | Name: Gary · Employee Id: 4372447 · Samples: 4 · Model: InsightFace buffalo_s
+12:45:37 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 43.3% · Pi host: JEFACEDESKTOP · Event Id: a9c46f87-e9cc-44e3-a069-c8b63502956c
+12:45:49 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 44.9% · Pi host: JEFACEDESKTOP · Event Id: 6a2ae451-b7f5-4674-b6b4-1830b75a7149
+12:46:18 | ADMIN                | FACE USER REGISTERED         | Name: g · Employee Id: 4372447 · Samples: 5 · Model: InsightFace buffalo_s
+12:46:41 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 53.1% · Pi host: JEFACEDESKTOP · Event Id: 12d45a60-d155-4404-9f55-702202bebd4a
+12:47:01 | ADMIN                | FACE USER REGISTERED         | Name: Gary · Employee Id: 4372447 · Samples: 6 · Model: InsightFace buffalo_s
+12:47:15 | ADMIN                | FACE USER REGISTRATION FAILED | Name: Gary · Employee Id: 4372447 · Result: Failed
+12:47:18 | ADMIN                | FACE USER REGISTRATION FAILED | Name: Gary · Employee Id: 4372447 · Result: Failed
+12:47:26 | ADMIN                | FACE USER REGISTERED         | Name: Gary · Employee Id: 4372447 · Samples: 7 · Model: InsightFace buffalo_s
+12:47:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:49:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:49:56 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 59.4% · Pi host: JEFACEDESKTOP · Event Id: 5a0858a2-8e94-41fe-905d-7b04b10f9db2
+12:51:21 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 73.0% · Pi host: JEFACEDESKTOP · Event Id: 94475346-713a-4b4b-9a82-649d3917f835
+12:51:34 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 67.6% · Pi host: JEFACEDESKTOP · Event Id: e420ee81-4473-42bb-85ac-75afb88609ff
+12:51:46 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 59.7% · Pi host: JEFACEDESKTOP · Event Id: 2d19fbba-259e-4a9e-bcb5-23ecafb594b6
+12:53:15 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 82.8% · Pi host: JEFACEDESKTOP · Event Id: cbfff9b1-c53f-4eba-8d69-2f1ed5ee2dd5
+12:53:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:53:53 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 80.4% · Pi host: JEFACEDESKTOP · Event Id: 10e48cde-0b6f-4bc1-80ce-677a3ab908ca
+12:54:02 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:54:25 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 67.2% · Pi host: JEFACEDESKTOP · Event Id: 4bd9f047-e303-454b-8b18-aacad400b246
+12:59:17 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 87.2% · Pi host: JEFACEDESKTOP · Event Id: 9f9c603d-907c-4837-bf30-9d5373d061e2
+12:59:27 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:59:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:59:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:59:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:59:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:59:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:00:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:00:50 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:01:27 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 84.3% · Pi host: JEFACEDESKTOP · Event Id: f54a633a-e1b8-4ffb-a7da-9b0f34f29e3b
+13:02:32 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 81.4% · Pi host: JEFACEDESKTOP · Event Id: dbb276fa-7efe-4823-a8f0-87514b6681a0
+13:04:01 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 77.8% · Pi host: JEFACEDESKTOP · Event Id: 94c10d4a-65a1-445b-966c-3177c165096b
+13:04:13 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 84.5% · Pi host: JEFACEDESKTOP · Event Id: 47d49cea-bc1d-41aa-8cc8-1553d037ff2a
+13:04:27 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 82.2% · Pi host: JEFACEDESKTOP · Event Id: 0d35c5de-6f31-4bbb-af97-620b8c53461d
+14:11:16 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:23:13 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:23:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:23:37 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:23:45 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:23:55 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:24:29 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:24:54 | ADMIN                | PI CONNECTED                 | Requested host: 10.122.135.89 · Pi host: JEFACEDESKTOP · API port: 5000 · Oneconnect: Normal connect
+14:24:57 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACEDESKTOP → 10.122.135.89 · Inactivity lock: 00:10 · Disabled while locked: Keyboard · Auto capture: Disabled · Camera rotation: 180°
+14:24:57 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:25:49 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:26:36 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:27:57 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 66.4% · Pi host: JEFACEDESKTOP · Event Id: 4e622af7-6f9a-484b-8fdd-704d663bb2e4
+14:28:22 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 80.0% · Pi host: JEFACEDESKTOP · Event Id: 16eda881-7e63-49cb-9260-d087aba832d4
+14:29:49 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 84.0% · Pi host: JEFACEDESKTOP · Event Id: 3b946782-1f57-45b5-ae37-e478792106bb
+14:32:18 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 79.7% · Pi host: JEFACEDESKTOP · Event Id: 17e49e7c-de6b-4162-b6a5-82d23e7224ba
+14:33:59 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 83.9% · Pi host: JEFACEDESKTOP · Event Id: c10edcd2-7c38-4e6d-9083-4a5f24b933df
+14:35:20 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 81.9% · Pi host: JEFACEDESKTOP · Event Id: 588927d2-c350-4735-b977-9026d6fa633e
+14:38:43 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:39:12 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 85.2% · Pi host: JEFACEDESKTOP · Event Id: 0082a5d4-4601-44fc-9a80-2b0888cce92d
+14:41:38 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 84.1% · Pi host: JEFACEDESKTOP · Event Id: ee529a5a-e086-4a49-b47e-87387db05df7
+14:46:24 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:48:56 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:48:56 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:49:10 | ADMIN                | SAS LOG DOWNLOADED           | Local folder: C:/Temp\SAS_LOG_20260727_144910 · Result: 5 file(s)
+14:49:18 | ADMIN                | PI LOG DOWNLOADED            | Local folder: C:/Temp\Pi_LOG_20260727_144918 · Pi host: 10.122.135.89
+14:53:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:53:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:53:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:53:23 | ADMIN                | PI DISCONNECTED              | Pi host: 10.122.135.89 · Result: Manual disconnect
+14:53:28 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:53:40 | UNAUTHENTICATED      | PI CONNECTED                 | Pi host: JEFACEDESKTOP · API port: 5000 · Oneconnect: Normal connect
+14:53:45 | UNAUTHENTICATED      | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: 10.122.135.89 → JEFACEDESKTOP · Inactivity lock: 00:10 · Disabled while locked: Keyboard · Auto capture: Disabled · Camera rotation: 180°
+14:54:18 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 82.3% · Pi host: JEFACEDESKTOP · Event Id: 0f12c36b-1111-4f13-9a34-b07e2912fed9
+14:55:55 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 81.6% · Pi host: JEFACEDESKTOP · Event Id: 2532a62e-20af-40be-8cde-5530f56048dd
+14:56:10 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+14:56:10 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+14:56:26 | 4372447              | SAS LOG DOWNLOADED           | Local folder: C:/Temp\SAS_LOG_20260727_145626 · Result: 5 file(s)
+14:56:34 | 4372447              | PI LOG DOWNLOADED            | Local folder: C:/Temp\Pi_LOG_20260727_145634 · Pi host: JEFACEDESKTOP
+14:59:20 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 78.2% · Pi host: JEFACEDESKTOP · Event Id: 7703ec43-f72a-4292-8922-211da7bc9b2f
+14:59:52 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:59:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:00:09 | ADMIN                | SAS LOG DOWNLOADED           | Local folder: C:/Temp\SAS_LOG_20260727_150009 · Result: 2026-07-27 only
+15:01:15 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:01:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:01:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:03:32 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 75.2% · Pi host: JEFACEDESKTOP · Event Id: 8c4afc0f-001c-4336-8d3b-61a3710ae744
+15:04:00 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:11:50 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 84.5% · Pi host: JEFACEDESKTOP · Event Id: b1da72cb-28fc-46b9-b4b4-c0fce91260a3
+15:31:25 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:31:35 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:31:42 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:31:51 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:31:59 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:32:08 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:32:16 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:32:25 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:32:33 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:32:42 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:32:47 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:32:50 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:32:59 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:33:07 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:33:16 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:33:22 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:33:22 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:33:25 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:33:33 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:33:42 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:33:50 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:33:59 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:34:07 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:34:16 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:34:24 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:34:33 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:34:41 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:34:50 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:34:56 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:34:58 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:35:07 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:35:15 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:35:24 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:35:32 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:35:41 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:35:49 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:35:58 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:36:06 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:36:15 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:36:23 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:36:32 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:36:40 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:36:49 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:36:57 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:37:06 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:37:12 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:37:14 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:37:23 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:37:31 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:37:40 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:37:48 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:37:57 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:38:05 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:38:14 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:38:22 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:38:31 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:38:40 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:38:48 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:38:57 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:39:05 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:39:14 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:39:22 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:39:31 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:39:39 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:39:48 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:39:57 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:40:05 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:40:14 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:40:22 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:40:31 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:40:39 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:40:48 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:40:56 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:41:05 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:41:14 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:41:22 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:41:30 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:41:39 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:41:43 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:41:43 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:41:47 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:41:56 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:42:04 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:43:37 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:43:37 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:46:15 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+20:47:05 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+20:47:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:47:25 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:48:14 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:48:16 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+20:49:40 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+20:50:40 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+20:50:40 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:50:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:50:59 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:51:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:51:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:51:49 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+20:51:57 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+22:15:52 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+22:15:52 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+22:16:17 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —

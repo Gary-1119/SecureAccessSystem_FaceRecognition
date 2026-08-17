@@ -1,0 +1,43 @@
+SAS v104 — Pi Desktop First-Start Patch
+
+PI APP PATCH — MODIFIED
+- pi_app_patch/gui.py
+  - Desktop launch now uses normal resizable window mode.
+  - TTY5 fullscreen is used only when the app is really running in the TTY5 fullscreen session.
+  - Fresh-start folders/files are created automatically: dataset, LOG, received folders, temp folders, user.json, settings.json, admins.txt.
+  - Hard-coded developer account admin / penAteam is not saved into admins.txt.
+  - First real AD-authenticated user login remains the first stored admin.
+
+- pi_app_patch/face_service.py
+  - Backend/API startup also creates required fresh-start files/folders.
+  - Admin file loading/saving ignores and removes the hard-coded developer admin account.
+  - Admin entries are normalized and duplicate-safe.
+
+PI APP PATCH — ADDED
+- pi_app_patch/deployment/facerecognition.desktop
+  - Desktop autostart entry for Raspberry Pi Desktop session.
+
+- pi_app_patch/deployment/install_desktop_autostart.sh
+  - Installs the Desktop autostart entry to /home/jbl_facerec/.config/autostart/.
+
+DOCUMENTATION — MODIFIED
+- README.md
+  - Documents Pi desktop first-start behavior.
+
+- CHANGED_FILES.txt
+  - Lists this patch.
+
+SAS MODULAR — NOT CHANGED
+- No Windows SAS files changed.
+
+PI APP PATCH — NOT CHANGED
+- recog.py
+- face_api.py
+- websocket_service.py
+- capture.py
+- train.py
+- multi_sftp_transfer.py
+- camera_rotation.py
+- system_control.py
+- system_storage.py
+- backup_retention.py

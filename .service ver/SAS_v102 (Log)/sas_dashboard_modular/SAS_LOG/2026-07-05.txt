@@ -1,0 +1,27 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-05
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+16:37:48 | 4372447              | LOGIN FAILED                 | Method: Active Directory · Result: Failed
+16:38:06 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+16:38:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:38:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:38:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:44:18 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:44:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:44:43 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:44:44 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:44:46 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:45:25 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+16:45:26 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:45:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:45:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:45:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:45:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:45:45 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:45:53 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE001 · Result: Failed
+16:45:55 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:47:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings

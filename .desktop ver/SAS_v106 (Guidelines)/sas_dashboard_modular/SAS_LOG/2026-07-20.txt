@@ -1,0 +1,52 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-20
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+13:16:10 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:16:10 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:16:16 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+13:16:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:16:25 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACESERVICE · Inactivity lock: 05:00 · Disabled while locked: Keyboard → None · Auto capture: Enabled · Camera rotation: 0°
+13:16:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:16:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:16:49 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:16:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:17:28 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+13:17:29 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:18:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:21:14 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACEDESKTOP · Result: Failed
+13:21:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:23:37 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACESERVICE → JEFACEDESKTOP · Inactivity lock: 05:00 · Disabled while locked: None · Auto capture: Enabled · Camera rotation: 0°
+13:23:38 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:24:32 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:24:32 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:24:41 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+13:24:42 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+13:24:46 | 4372447              | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACEDESKTOP · Inactivity lock: 05:00 · Disabled while locked: None → Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 0°
+13:29:28 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:29:31 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+13:30:58 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+13:31:00 | 4372447              | LOGOUT                       | —
+13:31:11 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+13:31:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:31:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:32:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:32:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:32:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:34:54 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:35:52 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:36:19 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+13:36:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:39:42 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:40:23 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:46:04 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:46:05 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:46:22 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:46:23 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:14:34 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:14:35 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:03:23 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:03:26 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —

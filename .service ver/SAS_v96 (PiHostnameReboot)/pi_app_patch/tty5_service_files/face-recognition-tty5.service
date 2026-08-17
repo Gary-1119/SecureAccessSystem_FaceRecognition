@@ -1,0 +1,25 @@
+[Unit]
+Description=Face Recognition GUI on dedicated TTY5 X session
+After=graphical.target systemd-user-sessions.service
+Wants=graphical.target
+Conflicts=getty@tty5.service
+
+[Service]
+Type=simple
+User=jbl_facerec
+WorkingDirectory=/home/jbl_facerec/New2.0
+TTYPath=/dev/tty5
+TTYReset=yes
+TTYVHangup=yes
+TTYVTDisallocate=yes
+StandardInput=tty
+StandardOutput=journal
+StandardError=journal
+Environment=HOME=/home/jbl_facerec
+Environment=FACE_RECOGNITION_FULLSCREEN=1
+ExecStart=/usr/bin/xinit /home/jbl_facerec/New2.0/run_face_tty5.sh -- :1 vt5 -nolisten tcp -keeptty
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical.target

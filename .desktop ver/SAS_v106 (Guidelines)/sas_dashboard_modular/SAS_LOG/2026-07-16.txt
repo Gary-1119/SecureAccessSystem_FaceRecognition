@@ -1,0 +1,27 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-16
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+10:27:43 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+10:27:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:28:16 | ADMIN                | PI CONNECTED                 | Pi host: JEFACESERVICE · API port: 5000 · Oneconnect: Normal connect
+10:28:42 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACEDESKTOP → JEFACESERVICE · Inactivity lock: 05:00 · Disabled while locked: Keyboard · Auto capture: Enabled · Camera rotation: 180°
+10:28:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:28:46 | ADMIN                | FACE USER DELETED            | Face ID: 4401758 · Dataset removed: Yes · Encodings removed: 9
+10:28:50 | ADMIN                | FACE USER DELETED            | Face ID: 4372447 · Dataset removed: Yes · Encodings removed: 35
+10:28:54 | ADMIN                | FACE USER DELETED            | Face ID: 4334984 · Dataset removed: Yes · Encodings removed: 42
+10:28:58 | ADMIN                | FACE USER DELETED            | Face ID: 4334983 · Dataset removed: Yes · Encodings removed: 8
+10:29:16 | ADMIN                | FACE USER DELETED            | Face ID: 3488939 · Dataset removed: Yes · Encodings removed: 10
+10:29:23 | ADMIN                | FACE USER DELETED            | Face ID: 3335557 · Dataset removed: Yes · Encodings removed: 9
+10:37:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:37:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:37:53 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:37:55 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACESERVICE · Result: Manual disconnect
+10:37:57 | ADMIN                | PI CONNECTED                 | Pi host: JEFACESERVICE · API port: 5000 · Oneconnect: Normal connect
+13:40:54 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+13:40:55 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:41:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:41:23 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings

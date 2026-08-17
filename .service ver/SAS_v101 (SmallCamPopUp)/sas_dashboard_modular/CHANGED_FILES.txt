@@ -1,0 +1,10 @@
+Modified: dashboard.py
+- Adds Pi Storage card to SAS Settings.
+- Adds used/available progress bar, warning states, manual Refresh, connection refresh and 30-second Settings-only polling.
+
+Modified: services/face_api_service.py
+- Adds get_system_storage() client method for GET /system/storage.
+
+Not changed:
+- all other SAS services and Python files
+- lock/unlock logic, face-recognition workflow, camera rotation, SFTP and import/export

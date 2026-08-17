@@ -1,0 +1,51 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-08
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+09:42:48 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+09:42:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:42:50 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE001 · API port: 5000
+09:43:02 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 78.5% · Pi host: JEFACE001 · Event Id: 16f8977b-7a27-49ad-a12e-ee562a796249
+09:43:51 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 78.4% · Pi host: JEFACE001 · Event Id: c036ad1a-13e1-48ac-ad42-62e520d72392
+09:44:35 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 79.7% · Pi host: JEFACE001 · Event Id: 21878877-f11c-46e7-9968-b290068e85b1
+09:49:04 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:49:06 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE001 · API port: 5000
+09:49:19 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 77.3% · Pi host: JEFACE001 · Event Id: e2e26c45-5a91-4848-86a5-615c0cf4aced
+09:55:05 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 77.6% · Pi host: JEFACE001 · Event Id: e5120c90-b661-4291-801c-8c24312ec8f9
+10:00:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:00:32 | ADMIN                | SETTINGS SAVED               | Server credentials: Updated · Server account: 4372447 · Password: Updated · Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 · Inactivity lock: 30:00 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 0°
+10:06:09 | ADMIN                | PI CONNECTION FAILED         | Requested host: facerecognition · Result: Failed
+10:06:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:06:14 | ADMIN                | PI CONNECTION FAILED         | Requested host: facerecognition · Result: Failed
+10:06:16 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:06:20 | ADMIN                | PI CONNECTION FAILED         | Requested host: facerecognition · Result: Failed
+10:06:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:06:37 | ADMIN                | PI CONNECTED                 | Requested host: 10.122.142.232 · Pi host: facerecognition · API port: 5000
+10:06:49 | ADMIN                | PI CONNECTED                 | Pi host: facerecognition · API port: 5000
+10:07:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:07:10 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 80.2% · Pi host: FACERECOGNITION · Event Id: 9480f988-da29-4040-a6ee-d69cc6db79ea
+10:09:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:09:43 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE010 · API port: 5000
+10:09:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:09:57 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 77.2% · Pi host: JEFACE010 · Event Id: 12100cee-efd8-4be2-ad3e-df2752f0cae0
+10:13:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:13:18 | ADMIN                | SFTP FACE DATA SEND STARTED  | Target Pi: JEFACE002, JEFACE001, JEFACE006, JEFACE008, JEFACE058, JEFACE041 · Target Count: 6 · ZIP file: Face data package
+10:13:34 | ADMIN                | SFTP FACE DATA SEND FINISHED | ZIP file: face_data_from_JEFACE010_20260708_101302_824748dfac09.zip · Target Results: JEFACE002: Failed, JEFACE001: Failed, JEFACE006: Failed, JEFACE008: Failed, JEFACE058: Failed, JEFACE041: Failed · Completed: 0 · Failed: 6
+10:13:46 | ADMIN                | SFTP FACE DATA SEND STARTED  | Target Pi: JEFACE002, JEFACE001, JEFACE006, JEFACE008, JEFACE058, JEFACE041, JEFACE010 · Target Count: 7 · ZIP file: Face data package
+10:14:02 | ADMIN                | SFTP FACE DATA SEND FINISHED | ZIP file: face_data_from_JEFACE010_20260708_101330_412ab16234c3.zip · Target Results: JEFACE002: Failed, JEFACE001: Failed, JEFACE006: Failed, JEFACE008: Failed, JEFACE058: Failed, JEFACE041: Failed, JEFACE010: Completed · Completed: 1 · Failed: 6
+10:15:15 | ADMIN                | RECEIVED FACE DATA IMPORTED  | Source: Check Received pending folder · ZIP file: backup_before_import_20260703_143231.zip · Imported users: No new users
+10:15:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:45:28 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 76.1% · Pi host: JEFACE010 · Event Id: d5b48e03-1f5c-4821-a0a1-0fea95e4a021
+10:45:45 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 71.1% · Pi host: JEFACE010 · Event Id: 70213a2d-fc10-471d-9598-0eef2a7a73fb
+10:51:37 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 75.7% · Pi host: JEFACE010 · Event Id: e53b2812-8d24-4165-abb8-8439ecfa0149
+10:57:52 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+10:57:52 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+11:03:35 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:01:11 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+16:01:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+16:01:18 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE010 · API port: 5000
+16:01:29 | ADMIN                | SFTP FACE DATA SEND STARTED  | Target Pi: JEFACE002 · Target Count: 1 · ZIP file: Face data package
+16:01:49 | ADMIN                | SFTP FACE DATA SEND COMPLETED | ZIP file: Face data package · Target Results: JEFACE002: Completed · Completed: 1 · Failed: 0

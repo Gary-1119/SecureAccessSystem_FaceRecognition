@@ -1,0 +1,21 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-23
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+13:39:44 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+13:39:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:41:54 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 74.2% · Pi host: JEFACEDESKTOP · Event Id: 19f97594-0350-4829-a37b-e5b1cb1ba3d2
+13:47:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:03:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:03:50 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:03:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:03:56 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:05:38 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 71.0% · Pi host: JEFACEDESKTOP · Event Id: 68387413-08c1-43ca-9e18-87bff947e797
+14:19:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:19:04 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:19:07 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:19:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:19:31 | ADMIN                | LOGOUT                       | —

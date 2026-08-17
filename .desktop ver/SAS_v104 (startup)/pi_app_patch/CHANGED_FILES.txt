@@ -1,0 +1,34 @@
+Pi App Patch v104 — Desktop First-Start Admin Setup
+
+MODIFIED
+- gui.py
+  Desktop mode fix: no forced TTY5 fullscreen when launched from Raspberry Pi Desktop.
+  Creates fresh-start local folders/files automatically.
+  Keeps admin / penAteam hard-coded only and removes it from admins.txt if copied there.
+  First real AD-authenticated user login is saved as first admin in admins.txt.
+
+- face_service.py
+  Backend/API startup creates the same fresh-start files/folders.
+  Admin file loading/saving ignores the hard-coded developer admin account.
+  Admin entries are normalized and duplicate-safe.
+
+ADDED
+- deployment/facerecognition.desktop
+  Raspberry Pi Desktop autostart entry.
+
+- deployment/install_desktop_autostart.sh
+  Installer for ~/.config/autostart/facerecognition.desktop.
+
+NOT CHANGED
+- recog.py
+- face_api.py
+- websocket_service.py
+- capture.py
+- train.py
+- multi_sftp_transfer.py
+- camera_rotation.py
+- system_control.py
+- system_storage.py
+- backup_retention.py
+- WebSocket protocol
+- recognition/capture/training algorithm

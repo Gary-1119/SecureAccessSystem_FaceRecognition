@@ -1,0 +1,35 @@
+SAS Modular v131 — WebSocket Face Unlock Transport
+
+MODIFIED
+- dashboard.py
+  Removed recognition_result.json polling from the timer flow.
+  Added WebSocket lock-session management and recognition_result event validation.
+  Footer now reports unlock channel as WEBSOCKET instead of STATE FILE.
+
+- app_config.py
+  Replaced the old recognition_result.json file constant with WEBSOCKET_UNLOCK_PATH.
+  Kept SCAN_VALID_SECONDS for event freshness validation.
+
+- services/runtime_lock_service.py
+  Updated lock/unlock comments to match WebSocket unlock behavior.
+
+- services/face_api_service.py
+  Legacy /recognition-result client method remains for compatibility, but unlock does not use it.
+
+ADDED
+- services/websocket_client_service.py
+  Qt WebSocket client used by SAS to connect to Pi /ws/sas, reconnect automatically,
+  send lock-session messages, and receive recognition events.
+
+DELETED
+- services/recognition_state_service.py
+  Old SMB recognition_result.json reader removed.
+
+NOT CHANGED
+- credential.txt format
+- admins.txt format
+- SAS_LOG text logging
+- Settings Save Connect flow except WebSocket connection setup
+- Import/Export and SFTP flows
+- Check Received flow
+- Camera preview route /video-feed

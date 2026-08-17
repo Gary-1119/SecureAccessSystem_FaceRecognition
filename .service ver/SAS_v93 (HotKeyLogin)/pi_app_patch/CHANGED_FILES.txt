@@ -1,0 +1,25 @@
+PI App Patch v104 - Changed Files
+
+MODIFIED
+- gui.py
+  * TTY5 fullscreen retries independent of LAN.
+  * Startup SMB mount moved to a background thread; offline boot remains local.
+
+- recog.py
+  * Local recognition_result.json always writes immediately.
+  * SMB recognition_result.json is delivered asynchronously and safely.
+  * Offline results are not replayed; remote state is reset after reconnect.
+  * SMB user.json/log operations are taken out of the camera loop.
+
+- face_service.py
+  * Settings-sync reset uses local write + asynchronous SMB publisher.
+
+ADDED
+- README.md
+  * Deployment, behavior, and test instructions.
+
+NOT CHANGED
+- capture.py
+- train.py
+- face_api.py
+- TTY5 systemd files

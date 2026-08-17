@@ -1,0 +1,40 @@
+Pi App Patch v131 — WebSocket Face Unlock Transport
+
+MODIFIED
+- face_api.py
+  Adds /ws/sas WebSocket route using flask-sock.
+  /status now reports websocket availability, connected clients, active lock sessions, and last WebSocket event time/error.
+
+- recog.py
+  Removes SMB recognition_result.json delivery from the recognition loop.
+  Valid detections publish through WebSocket instead.
+  Pi-local recognition_result.json remains only as a diagnostic/legacy HTTP state file.
+  SMB remains used for Pi_LOG and user.json sync.
+
+- face_service.py
+  Settings reset no longer queues recognition_result.json to SMB.
+  Settings response now reports unlock_transport=websocket.
+
+- gui.py
+  Settings metadata now records unlock_transport=websocket.
+
+ADDED
+- websocket_service.py
+  WebSocket hub for SAS clients. Tracks active lock sessions and publishes fresh recognition_result events.
+
+NOT CHANGED
+- capture.py
+- train.py
+- multi_sftp_transfer.py
+- sftp_target.txt
+- system_control.py
+- system_storage.py
+- camera_rotation.py
+- backup_retention.py
+- dataset structure
+- import/export and SFTP transfer logic
+- Check Received folders
+- SMB logs and user.json sync
+
+DEPLOYMENT NOTE
+- Install dependency on Pi: pip install flask-sock

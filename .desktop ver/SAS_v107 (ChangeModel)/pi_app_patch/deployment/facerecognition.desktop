@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Face Recognition GUI
+Comment=Start Face Recognition GUI after Raspberry Pi Desktop login
+Exec=bash -lc 'sleep 10; cd /home/jbl_facerec/FaceRecognition && /home/jbl_facerec/FaceRecognition/.venv/bin/python gui.py >> /home/jbl_facerec/desktop-gui.log 2>&1'
+Terminal=false
+X-GNOME-Autostart-enabled=true

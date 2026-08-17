@@ -1,0 +1,13 @@
+SAS v123 — Multi-Pi SFTP Checkbox Fix
+
+MODIFIED
+- sas_dashboard_modular/dashboard.py
+  Replaced the Multi-Pi SFTP QCheckBox indicators with visible, checkable
+  QPushButton-based checkboxes matching the SAS Settings Disable controls.
+
+NOT CHANGED
+- sas_dashboard_modular/services/face_api_service.py
+- All Pi files
+- SFTP target API
+- Multi-Pi transfer execution
+- SAS lock/unlock, camera, storage, import/export, Check Received

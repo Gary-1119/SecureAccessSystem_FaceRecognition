@@ -1,0 +1,21 @@
+{
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "**/.*",
+    "**/node_modules",
+    "**/__pycache__",
+    "SAS_LOG",
+    "face_data",
+    "build",
+    "dist"
+  ],
+  "pythonVersion": "3.11",
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "none",
+  "reportMissingTypeStubs": "none",
+  "reportUnknownArgumentType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownVariableType": "none"
+}

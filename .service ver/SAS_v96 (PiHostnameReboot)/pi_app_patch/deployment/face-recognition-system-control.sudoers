@@ -1,0 +1,8 @@
+# Limited passwordless device-control actions for the Face Recognition Pi GUI.
+# The helper itself validates all hostname input and is installed root-owned.
+Cmnd_Alias FACE_RECOGNITION_SYSTEM_CONTROL = \
+    /usr/local/sbin/face-recognition-system-control status, \
+    /usr/local/sbin/face-recognition-system-control set-hostname *, \
+    /usr/local/sbin/face-recognition-system-control reboot
+
+jbl_facerec ALL=(root) NOPASSWD: FACE_RECOGNITION_SYSTEM_CONTROL

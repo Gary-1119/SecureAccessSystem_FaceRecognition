@@ -1,0 +1,246 @@
+[2026-07-03 08:01:22] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 08:01:22] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:01:54] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 08:02:12] UNLOCKED | USER=4372447 | CONFIDENCE=76.8%
+[2026-07-03 08:09:44] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:09:46] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:10:06] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 08:10:39] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 08:10:41] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:22:19] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:28:48] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:29:30] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:30:05] SETTINGS SAVED | ACTOR=ADMIN | SERVER=//mypenm0vdspc16/internship/Gary LIm/SAS_finaltest | TIMEOUT=10s | DISABLE_KEYBOARD=True | DISABLE_MOUSE=True | AUTO_CAPTURE=True | CAMERA_ROTATION=180
+[2026-07-03 08:30:10] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 08:30:11] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:30:27] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:31:16] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:31:50] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:32:01] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 08:32:01] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 08:35:20] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:35:59] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:37:28] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:38:55] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:40:19] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:43:18] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:44:07] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 08:44:23] SETTINGS SAVED | ACTOR=UNAUTHENTICATED | SERVER=//mypenm0vdspc16/internship/Gary LIm/SAS_finaltest | TIMEOUT=1800s | DISABLE_KEYBOARD=True | DISABLE_MOUSE=True | AUTO_CAPTURE=True | CAMERA_ROTATION=0
+[2026-07-03 09:29:45] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 09:29:45] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:14:38] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:14:39] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:14:51] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 12:14:52] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 12:14:53] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 12:15:06] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 12:15:26] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:19:49] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:19:49] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:20:45] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:21:07] LOGIN SUCCESS | USER=4372447 | ROLE=ADMIN | METHOD=ACTIVE_DIRECTORY
+[2026-07-03 12:21:07] RESTRICTED PAGE OPENED | USER=4372447 | PAGE=SETTINGS
+[2026-07-03 12:21:43] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 12:21:44] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 12:21:55] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 12:22:19] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 12:22:20] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 12:22:21] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 12:22:37] SETTINGS SAVED | ACTOR=ADMIN | SERVER=//mypenm0vdspc16/internship/Gary LIm/SAS_finaltest | TIMEOUT=1800s | DISABLE_KEYBOARD=True | DISABLE_MOUSE=True | AUTO_CAPTURE=True | CAMERA_ROTATION=0
+[2026-07-03 12:27:21] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:27:52] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:28:42] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:28:42] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:29:00] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:38:10] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:38:10] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:38:40] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:38:40] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:54:19] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:56:29] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:58:46] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:58:46] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:59:02] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:59:03] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 12:59:20] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 12:59:21] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 12:59:24] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:05:49] UNLOCKED | USER=4372447 | CONFIDENCE=72.5%
+[2026-07-03 13:06:05] UNLOCKED | USER=4372447 | CONFIDENCE=76.0%
+[2026-07-03 13:06:22] UNLOCKED | USER=4372447 | CONFIDENCE=74.9%
+[2026-07-03 13:29:05] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:29:20] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:31:24] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 13:31:24] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:41:01] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 13:41:01] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:43:04] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 13:43:07] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:48:57] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:49:10] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:49:12] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:49:24] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 13:56:02] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 13:56:04] LOGOUT | USER=ADMIN
+[2026-07-03 13:56:16] LOGIN SUCCESS | USER=4372447 | ROLE=ADMIN | METHOD=ACTIVE_DIRECTORY
+[2026-07-03 13:56:16] RESTRICTED PAGE OPENED | USER=4372447 | PAGE=SETTINGS
+[2026-07-03 13:57:34] RESTRICTED PAGE OPENED | USER=4372447 | PAGE=FACE RECOGNITION
+[2026-07-03 13:57:57] RESTRICTED PAGE OPENED | USER=4372447 | PAGE=SETTINGS
+[2026-07-03 14:03:41] RESTRICTED PAGE OPENED | USER=4372447 | PAGE=FACE RECOGNITION
+[2026-07-03 14:09:43] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 14:09:43] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 14:10:44] UNLOCKED | USER=NOT_AUTHENTICATED | METHOD=EMERGENCY_HOTKEY | WORKSTATION_USER=4372447 | ACCESS=DESKTOP_ONLY | CONFIDENCE=N/A
+[2026-07-03 14:14:23] LOGIN SUCCESS | USER=ADMIN | ROLE=ADMIN | METHOD=BUILT_IN_LOCAL_ADMIN
+[2026-07-03 14:14:23] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 14:15:08] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 14:15:10] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 14:15:12] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+[2026-07-03 14:15:23] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=FACE RECOGNITION
+[2026-07-03 14:15:24] RESTRICTED PAGE OPENED | USER=ADMIN | PAGE=SETTINGS
+
+======================================================================
+SAS AUDIT LOG - 2026-07-03
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+14:22:02 | ADMIN                | LOGIN SUCCESS                | Detail: ('ROLE', 'ADMIN') · Detail: ('METHOD', 'BUILT_IN_LOCAL_ADMIN')
+14:22:02 | ADMIN                | RESTRICTED PAGE OPENED       | Detail: ('PAGE', 'SETTINGS')
+14:22:16 | ADMIN                | SETTINGS SAVED               | Server Credentials: Confirmed · Server User: 4372447 · Password: Not changed · Server Path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi Host: JEFACE001 · Inactivity Lock: 30:00 · Disabled While Locked: Keyboard, Mouse · Auto Capture: Enabled · Camera Rotation: 0°
+14:22:21 | ADMIN                | PI CONNECTED                 | Requested Host: JEFACE001 · Pi Hostname: JEFACE001 · Pi Account: jbl_facerec · Api Port: 5000
+14:22:30 | ADMIN                | SETTINGS SAVED               | Server Credentials: Confirmed · Server User: 4372447 · Password: Not changed · Server Path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi Host: JEFACE001 · Inactivity Lock: 30:00 → 00:15 · Disabled While Locked: Keyboard, Mouse · Auto Capture: Enabled · Camera Rotation: 0°
+14:23:16 | ADMIN                | FACE DATA EXPORTED TO SERVER | Server Path: \\mypenm0vdspc16\internship\Gary LIm\sas_finaltest · Zip File: face_data_20260703_142312.zip
+14:23:27 | ADMIN                | ADMIN REMOVED                | Detail: ('TARGET', '4278479')
+14:23:49 | ADMIN                | ADMIN REMOVED                | Detail: ('TARGET', '4334984')
+14:23:54 | ADMIN                | ADMIN ADDED                  | Detail: ('TARGET', '4334984')
+14:24:00 | ADMIN                | RESTRICTED PAGE OPENED       | Detail: ('PAGE', 'FACE RECOGNITION')
+14:24:07 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:24:07 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:27:52 | 4372447              | LOGIN SUCCESS                | Detail: ('ROLE', 'ADMIN') · Detail: ('METHOD', 'ACTIVE_DIRECTORY')
+14:27:53 | 4372447              | RESTRICTED PAGE OPENED       | Detail: ('PAGE', 'SETTINGS')
+14:28:50 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:28:51 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:29:12 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:29:12 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:29:43 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:29:43 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:30:03 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:30:04 | NOT_AUTHENTICATED    | UNLOCKED                     | Detail: ('METHOD', 'EMERGENCY_HOTKEY') · Detail: ('WORKSTATION_USER', '4372447') · Detail: ('ACCESS', 'DESKTOP_ONLY') · Detail: ('CONFIDENCE', 'N/A')
+14:31:26 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:31:26 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:31:50 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:31:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:31:55 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE001 · API port: 5000
+14:32:06 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 · Inactivity lock: 00:15 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 0°
+14:32:12 | ADMIN                | SFTP FACE DATA SEND STARTED  | Target Pi: JEFACE002, JEFACE001, JEFACE006, JEFACE008, JEFACE058, JEFACE041 · Target Count: 6 · ZIP file: Face data package
+14:32:28 | ADMIN                | SFTP FACE DATA SEND FINISHED | ZIP file: face_data_from_JEFACE001_20260703_143212_70201871d80b.zip · Target Results: JEFACE002: Failed, JEFACE001: Completed, JEFACE006: Failed, JEFACE008: Failed, JEFACE058: Failed, JEFACE041: Failed · Completed: 1 · Failed: 5
+14:32:37 | ADMIN                | RECEIVED FACE DATA IMPORTED  | Source: Check Received pending folder · ZIP file: face_data_from_JEFACE001_20260703_143212_70201871d80b.zip · Imported users: No new users
+14:32:55 | ADMIN                | ADMIN REMOVED                | Admin: 4334984
+14:33:00 | ADMIN                | ADMIN ADDED                  | Admin: 4334984
+14:33:21 | ADMIN                | ADMIN ADDED                  | Admin: 4334342
+14:33:25 | ADMIN                | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 · Inactivity lock: 00:15 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 0°
+14:33:27 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:33:35 | ADMIN                | FACE CAPTURE STARTED         | Face ID: 4372447 · Mode: Auto
+14:34:06 | ADMIN                | FACE TRAINING COMPLETED      | Scope: Full face dataset · New Face Encodings: 0
+14:34:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:34:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:34:17 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:34:18 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:35:10 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:35:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:35:40 | ADMIN                | FACE TRAINING COMPLETED      | Scope: Full face dataset · New Face Encodings: 0
+14:35:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:38:00 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:38:00 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:38:35 | 4372447              | UNLOCKED                     | Method: Face Recognition · Confidence: 71.8%
+14:39:42 | 4372447              | UNLOCKED                     | Method: Face Recognition · Confidence: 70.5%
+14:39:54 | 4372447              | UNLOCKED                     | Method: Face Recognition · Confidence: 71.9%
+14:40:55 | 4372447              | UNLOCKED                     | Method: Face Recognition · Confidence: 73.4%
+14:48:11 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:48:11 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:49:14 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+14:49:15 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:50:50 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:50:50 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:52:18 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+14:52:18 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+14:52:49 | 4372447              | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 · Inactivity lock: 00:15 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 0°
+14:52:51 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:53:00 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:53:00 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:53:15 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+14:53:15 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+14:53:20 | 4372447              | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 · Inactivity lock: 00:15 · Disabled while locked: Keyboard, Mouse → None · Auto capture: Enabled · Camera rotation: 0°
+14:53:37 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+14:53:38 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:53:39 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+14:57:27 | 4372447              | UNLOCKED                     | Method: Manual
+14:57:36 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+14:57:38 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:57:47 | 4372447              | LOGOUT                       | —
+14:57:57 | MANUAL               | UNLOCKED                     | Method: Manual
+14:59:15 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+14:59:15 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:59:46 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+14:59:48 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:59:50 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:00:59 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:01:00 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:01:03 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:01:04 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:02:49 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:02:50 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:02:51 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:20:08 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:20:10 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:20:11 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:21:22 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:21:24 | 4372447              | UNLOCKED                     | Method: Manual
+15:21:26 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:21:36 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:21:55 | 4372447              | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 · Inactivity lock: 00:15 · Disabled while locked: None → Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 0°
+15:21:58 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:22:55 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+15:22:55 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:23:05 | 4372447              | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 · Inactivity lock: 00:15 → 00:10 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 0°
+15:23:35 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:23:36 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:25:34 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:27:36 | 4372447              | UNLOCKED                     | Method: Face Recognition · Confidence: 73.2%
+15:28:05 | 4372447              | UNLOCKED                     | Method: Face Recognition · Confidence: 70.0%
+15:36:17 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:36:17 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:45:37 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:45:37 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:46:51 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+15:46:52 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:47:23 | 4372447              | PI CONNECTED                 | Pi host: JEFACE001 · API port: 5000
+15:49:53 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:49:53 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:50:50 | UNAUTHENTICATED      | SFTP FACE DATA SEND STARTED  | Target Pi: JEFACE002, JEFACE001, JEFACE006, JEFACE008, JEFACE058, JEFACE041 · Target Count: 6 · ZIP file: Face data package
+15:51:09 | UNAUTHENTICATED      | SFTP FACE DATA SEND FINISHED | ZIP file: face_data_from_JEFACE001_20260703_155050_79fbb99f6982.zip · Target Results: JEFACE002: Failed, JEFACE001: Completed, JEFACE006: Failed, JEFACE008: Failed, JEFACE058: Failed, JEFACE041: Failed · Completed: 1 · Failed: 5
+15:52:37 | UNAUTHENTICATED      | RECEIVED FACE DATA REJECTED  | Source: Check Received pending folder · ZIP file: face_data_from_JEFACE001_20260703_133132_21d1836ed746.zip
+15:52:39 | UNAUTHENTICATED      | RECEIVED FACE DATA REJECTED  | Source: Check Received pending folder · ZIP file: face_data_from_JEFACE001_20260703_134200_d3802f1cfb58.zip
+15:55:16 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+15:55:16 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:55:27 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:55:28 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:55:31 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+15:55:37 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:56:15 | 4372447              | FACE CAPTURE STARTED         | Face ID: 3488939 · Mode: Auto
+15:56:38 | 4372447              | FACE CAPTURE COMPLETED       | Face ID: 3488939 · Captured images: 10 · Mode: Auto
+15:57:20 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:57:20 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:57:28 | 4372447              | FACE TRAINING COMPLETED      | Scope: Full face dataset · New Face Encodings: 10
+15:58:56 | 3488939              | UNLOCKED                     | Method: Face Recognition · Confidence: 73.6%
+15:59:24 | 3488939              | UNLOCKED                     | Method: Face Recognition · Confidence: 83.8%
+16:00:22 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:00:22 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:00:32 | 4372447              | LOGIN SUCCESS                | Role: Admin · Method: Active Directory
+16:00:34 | 4372447              | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:01:53 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+16:03:55 | 3488939              | UNLOCKED                     | Method: Face Recognition · Confidence: 73.7%
+16:04:16 | 4372447              | RESTRICTED PAGE OPENED       | Page: Settings
+16:06:20 | 4372447              | SETTINGS SAVED               | Server path: //mypenm0vdspc16/internship/Gary LIm/SAS_finaltest · Pi host: JEFACE001 · Inactivity lock: 00:10 → 30:00 · Disabled while locked: Keyboard, Mouse · Auto capture: Enabled · Camera rotation: 0°
+16:20:49 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —

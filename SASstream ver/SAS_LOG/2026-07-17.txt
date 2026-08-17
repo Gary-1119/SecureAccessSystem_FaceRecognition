@@ -1,0 +1,103 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-17
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+14:09:41 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:09:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:10:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:10:04 | ADMIN                | PI DISCONNECTED              | Pi host: JEFACESERVICE · Result: Manual disconnect
+14:10:14 | ADMIN                | PI CONNECTED                 | Requested host: jbleyepoc035 · Pi host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+14:10:19 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACESERVICE → jbleyepoc035 · Inactivity lock: 05:00 · Disabled while locked: Keyboard · Auto capture: Disabled · Camera rotation: 0°
+14:10:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:11:12 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:11:12 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:13:11 | 4433                 | LOGIN FAILED                 | Method: Active Directory · Result: Failed
+14:13:25 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:13:25 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:13:34 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:14:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:14:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:17:40 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:20:08 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:20:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:20:27 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 65.96% · Pi host: JBLEYEPOC035 · Event Id: 25bf496b-00da-4f35-8566-69858d7b81a9
+14:20:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:20:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:26:50 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:26:50 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:27:12 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 73.69% · Pi host: JBLEYEPOC035 · Event Id: 97cedd2c-e303-4318-97ac-24a55bf6f304
+14:27:33 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:27:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:28:12 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 90 · Admin: PI · Method: Settings
+14:28:14 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:28:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:28:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:28:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:28:24 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 180 · Admin: PI · Method: Settings
+14:28:25 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 270 · Admin: PI · Method: Settings
+14:28:26 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 0 · Admin: PI · Method: Settings
+14:29:54 | ADMIN                | FACE DATA EXPORTED TO SERVER | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · ZIP file: SAS_face_dataset_20260717_142954.zip
+14:31:43 | ADMIN                | FACE DATA IMPORTED FROM SERVER | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · ZIP file: SAS_face_dataset_20260717_142954.zip · Imported users: No new users
+14:32:15 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:32:18 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:34:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:35:16 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:35:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:49:36 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:49:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:49:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:49:43 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 90 · Admin: LOCAL_RTSP · Method: Settings
+14:49:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:49:50 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:49:51 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 180 · Admin: LOCAL_RTSP · Method: Settings
+14:49:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:50:08 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:50:10 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 0 · Admin: LOCAL_RTSP · Method: Settings
+14:50:27 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:51:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:51:03 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 180 · Admin: LOCAL_RTSP · Method: Settings
+14:51:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:52:10 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 80.04% · Pi host: JBLEYEPOC035 · Event Id: 74915c4e-8bd0-48d1-9918-982e55c9ac05
+14:52:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:52:24 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_WEBSOCKET · Confidence: 80.0% · Pi host: JBLEYEPOC035 · Event Id: f70bfec4-8b6d-427a-aaa8-fa8d2637a77f
+14:52:35 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:55:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:55:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:55:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:58:59 | ADMIN                | PI DISCONNECTED              | Pi host: jbleyepoc035 · Result: Manual disconnect
+14:59:00 | ADMIN                | PI CONNECTED                 | Requested host: jbleyepoc035 · Pi host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+14:59:02 | ADMIN                | PI DISCONNECTED              | Pi host: jbleyepoc035 · Result: Manual disconnect
+14:59:03 | ADMIN                | PI CONNECTED                 | Requested host: jbleyepoc035 · Pi host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+14:59:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:59:35 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:59:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:59:53 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:04:56 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+15:04:57 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:05:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:05:19 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 180 · Admin: LOCAL_RTSP · Method: Settings
+15:05:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:05:29 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:05:31 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 90 · Admin: LOCAL_RTSP · Method: Settings
+15:05:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:05:43 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:05:44 | ADMIN                | CAMERA ROTATION CHANGED      | Rotation: 0 · Admin: LOCAL_RTSP · Method: Settings
+15:05:45 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:06:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:06:37 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:06:42 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:06:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:06:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:06:56 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+15:07:02 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:07:04 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+15:16:27 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:16:27 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+16:27:17 | ADMIN                | LOGIN SUCCESS                | Role: Admin Â· Method: Built-in Local Admin
+16:27:18 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+16:27:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+17:31:35 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+17:31:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition

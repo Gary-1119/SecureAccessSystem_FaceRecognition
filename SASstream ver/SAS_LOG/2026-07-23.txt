@@ -1,0 +1,173 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-23
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+08:20:02 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:20:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:20:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+08:26:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+08:42:44 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_LOCAL · Confidence: 72.42% · Camera Host: JBLEYEPOC035 · Event Id: 95da834f-1b73-44e3-9361-cc94be8b25a7
+09:51:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:46:38 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:46:40 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:46:42 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+10:47:11 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: 10.122.141.88 · Result: Failed
+10:47:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:47:30 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Camera Host: jbleyepoc035 → 10.122.141.88 · Inactivity lock: 05:00 · Disabled while locked: None · Camera rotation: 0°
+10:47:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:47:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:47:34 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: 10.122.141.88 · Result: Manual disconnect
+10:47:35 | ADMIN                | CAMERA CONNECTED             | Requested host: 10.122.141.88 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+10:47:40 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: 10.122.141.88 · Result: Manual disconnect
+10:47:41 | ADMIN                | CAMERA CONNECTED             | Requested host: 10.122.141.88 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+10:53:59 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+10:53:59 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:54:02 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: 10.122.141.88 · Result: Manual disconnect
+10:54:03 | ADMIN                | CAMERA CONNECTED             | Requested host: 10.122.141.88 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+10:54:12 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: 10.122.141.88 · Result: Manual disconnect
+10:54:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:54:28 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: 10.122.141 · Result: Failed
+10:54:34 | ADMIN                | CAMERA CONNECTED             | Requested host: 10.122.141.88 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+10:54:38 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:54:40 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:54:41 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: 10.122.141.88 · Result: Manual disconnect
+10:55:00 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:55:01 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+10:55:05 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Camera Host: 10.122.141.88 → jbleyepoc035 · Inactivity lock: 05:00 · Disabled while locked: None · Camera rotation: 0°
+10:55:07 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:55:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:55:16 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:55:25 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:02:30 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+11:02:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:02:35 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:02:57 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:02:58 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:03:13 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_LOCAL · Confidence: 60.53% · Camera Host: JBLEYEPOC035 · Event Id: e85b540e-f970-48ff-aa29-2d1b9b2b40c6
+11:04:07 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:04:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:04:58 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_LOCAL · Confidence: 58.22% · Camera Host: JBLEYEPOC035 · Event Id: af8bb984-1685-4b48-a459-b2b76293af93
+11:05:08 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:07:28 | ADMIN                | UNLOCKED                     | Method: Manual
+11:15:08 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+11:15:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:15:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:15:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:18:04 | ADMIN                | UNLOCKED                     | Method: Manual
+11:18:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:18:07 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:24:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:24:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:24:23 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+11:24:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:24:40 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+12:03:46 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:03:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:03:48 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:04:11 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:04:17 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:04:50 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:05:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:05:32 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:05:40 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:05:58 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:06:07 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:06:10 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:08:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:09:08 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:09:09 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+12:09:12 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:10:14 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+12:14:52 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:14:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:14:58 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:15:01 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:27:35 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:27:36 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:27:39 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:27:42 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:28:01 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:28:07 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Camera Host: jbleyepoc035 → jbleyepoc0 · Inactivity lock: 05:00 · Disabled while locked: None · Camera rotation: 0°
+12:28:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:28:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:28:35 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:28:41 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:28:46 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:28:48 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:28:48 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:28:51 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:28:54 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:28:57 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:29:00 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:29:03 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:29:06 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:29:09 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:29:23 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:29:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:29:54 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:29:55 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:33:27 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:33:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:33:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:34:04 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:34:14 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:34:27 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:34:31 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:34:34 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:34:41 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:43:00 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:43:07 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:43:15 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:43:34 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:44:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:44:34 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc0 · Result: Failed
+12:44:34 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:44:46 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:52:22 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Camera Host: jbleyepoc0 → jbleyepoc035 · Inactivity lock: 05:00 · Disabled while locked: None · Camera rotation: 0°
+12:54:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:54:06 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:57:53 | ADMIN                | LOGIN FAILED                 | Method: Active Directory · Result: Failed
+12:58:02 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:58:03 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:58:07 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+12:58:29 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc0 · Result: Failed
+12:58:29 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:58:41 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+12:58:52 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:59:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:02:23 | ADMIN                | UNLOCKED                     | Method: Manual
+13:12:29 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+13:14:09 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+13:14:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:14:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:16:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+13:16:40 | 4372447              | UNLOCKED                     | Method: FACE_RECOGNITION_LOCAL · Confidence: 69.61% · Camera Host: JBLEYEPOC035 · Event Id: 343519c2-143f-4d71-bdb6-345bd4ba095e
+14:21:15 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:21:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:23:21 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+14:23:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:23:27 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:23:45 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+14:23:46 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:24:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:25:05 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+14:25:08 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:25:33 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+14:25:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:26:43 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc035 · Result: Failed
+14:26:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:33:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:37:04 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:37:04 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:37:07 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:37:10 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+14:37:32 | ADMIN                | CAMERA CONNECTION FAILED     | Requested host: jbleyepoc0 · Result: Failed
+14:37:33 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:37:54 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect
+14:43:15 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:43:15 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:43:18 | ADMIN                | CAMERA DISCONNECTED          | Camera Host: jbleyepoc035 · Result: Manual disconnect
+14:43:23 | ADMIN                | CAMERA CONNECTED             | Requested host: jbleyepoc035 · Camera Host: MYPENNBLOAN0457 · API port: 5000 · Oneconnect: Normal connect

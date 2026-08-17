@@ -1,0 +1,54 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-22
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+09:35:22 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:35:27 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:35:30 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:35:31 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:35:32 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:35:33 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:35:49 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+09:35:49 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:37:23 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:37:23 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:37:49 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+09:37:51 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:38:04 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACEDESKTOP · Result: Failed
+09:38:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:50:43 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:56:40 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:56:40 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:56:40 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:56:40 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+10:13:07 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+10:13:08 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:13:12 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:12:13 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+11:12:14 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:12:23 | ADMIN                | SETTINGS SAVED               | Server path: \\mypenm0vdspc16\internship\Gary LIm\SAS_finaltest · Pi host: JEFACEDESKTOP · Inactivity lock: 05:00 · Disabled while locked: Keyboard, Mouse → None · Auto capture: Enabled · Camera rotation: 180°
+11:12:23 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:28:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:11:10 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:11:11 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:18:19 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:18:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:18:21 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:18:25 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:22:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:22:24 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:22:38 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:22:41 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:22:44 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:22:45 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:26:13 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+12:32:47 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+12:34:09 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+12:34:09 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+12:57:10 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+12:57:10 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:02:18 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+13:12:59 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —

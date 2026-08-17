@@ -1,0 +1,13 @@
+SAS Modular v106 One-Pi Session
+
+Modified:
+- app_config.py — Adds stable SAS client ID runtime file path.
+- dashboard.py — Adds Connect/Disconnect button workflow, disables Pi host field while connected, handles one-Pi connection conflict/takeover, manual disconnect, and heartbeat.
+- services/websocket_client_service.py — Sends SAS client identity to Pi WebSocket.
+- services/face_api_service.py — Adds wrappers for one-Pi session endpoints.
+
+Added:
+- None
+
+Deleted:
+- None

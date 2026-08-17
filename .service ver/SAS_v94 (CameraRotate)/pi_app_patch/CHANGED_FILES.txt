@@ -1,0 +1,29 @@
+Pi App Patch v105 — Camera Rotation Sync
+
+Added
+1. camera_rotation.py
+   - Shared persisted 0/90/180/270 degree camera-rotation helper.
+   - Atomic settings.json updates and shared OpenCV frame rotation.
+
+Modified
+2. gui.py
+   - Added Pi Settings Camera Orientation controls.
+   - Allows local 0°/90°/180°/270° adjustment and keeps settings.json synchronized.
+   - Preserves camera_rotation when server credentials are saved.
+
+3. recog.py
+   - Rotates each live frame before preview, detection, encoding, and API video feed.
+
+4. capture.py
+   - Rotates capture preview, face detection, and saved training images.
+
+5. face_service.py
+   - GET /settings returns camera_rotation.
+   - POST /settings accepts rotation-only updates from SAS without mounting SMB.
+   - Keeps the Pi UI in sync when SAS changes the rotation.
+
+Not changed
+- train.py
+- face_api.py
+- TTY5 service files
+- Model, confidence, SFTP/import/export, admin logic

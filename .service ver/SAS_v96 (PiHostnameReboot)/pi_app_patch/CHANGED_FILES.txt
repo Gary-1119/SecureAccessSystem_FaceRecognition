@@ -1,0 +1,30 @@
+Pi App Patch v108 — Hostname Persistence Fix
+
+Modified deployment/face-recognition-system-control.sh
+- Explicitly persists hostname in /etc/hostname.
+- Updates /etc/hosts safely.
+- Updates live hostname with hostnamectl.
+- Adds a cloud-init hostname-preservation drop-in only when cloud-init is installed.
+- Verifies persistent hostname before returning success.
+
+Modified deployment/install_system_control.sh
+- Updated installer messaging for v108.
+
+Included deployment/face-recognition-system-control.sudoers
+- Same limited sudo scope as v107; included for complete deployment folder replacement.
+
+Added README.md
+Added CHANGED_FILES.txt
+
+Not changed:
+- gui.py
+- system_control.py
+- face_service.py
+- recog.py
+- capture.py
+- camera_rotation.py
+- backup_retention.py
+- TTY5 service files
+- SMB configuration
+- Dataset, user data, encodings, logs, recognition results
+- SAS Windows application

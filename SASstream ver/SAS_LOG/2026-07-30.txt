@@ -1,0 +1,12 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-30
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+10:17:24 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+10:17:25 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:36:29 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+10:36:37 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+10:38:47 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —

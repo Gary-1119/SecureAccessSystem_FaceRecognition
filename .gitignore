@@ -1,0 +1,9 @@
+*.zip
+*.onnx
+__pycache__/
+*.pyc
+dist/
+build/
+bin/
+obj/
+*.log

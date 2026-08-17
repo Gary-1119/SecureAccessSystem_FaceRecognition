@@ -1,0 +1,11 @@
+[Unit]
+Description=Switch display to the Face Recognition TTY5 session
+After=face-recognition-tty5.service graphical.target
+Wants=face-recognition-tty5.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/switch-to-tty5.sh
+
+[Install]
+WantedBy=graphical.target

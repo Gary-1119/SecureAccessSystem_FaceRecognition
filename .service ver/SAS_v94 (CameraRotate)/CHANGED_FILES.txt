@@ -1,0 +1,21 @@
+SAS v106 — Hotkey Desktop-Only Unlock and Audit Trail
+
+Modified files
+1. sas_dashboard_modular/services/runtime_lock_service.py
+   - Emergency Ctrl+Shift+Alt now unlocks desktop input only.
+   - It does not create an SAS Admin session or open Settings/Face Recognition.
+   - It writes a detailed SAS_LOG audit record.
+
+2. sas_dashboard_modular/dashboard.py
+   - Settings and Face Recognition require an authenticated Admin.
+   - Added audit logs for login success/failure, restricted page access, settings saves, Admin changes and logout.
+   - SAS_LOG now accepts all audit event types, not only UNLOCKED lines.
+
+3. README.md
+   - Release notes and behavior summary.
+
+Not changed
+- dialogs.py
+- Pi app / pi_app_patch
+- lock notification camera UI
+- mouse/keyboard lock implementation

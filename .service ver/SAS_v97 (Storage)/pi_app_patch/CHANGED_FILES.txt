@@ -1,0 +1,22 @@
+Pi App Patch v115 — Compact Storage, Preserve Working Settings
+
+MODIFIED
+- gui.py
+  Base file: user-uploaded working v107 gui.py.
+  Added one compact, read-only Pi Storage section inside Pi Network Identity.
+
+NOT CHANGED
+- Settings scroll behavior
+- Settings popup layout and permissions
+- Hostname/reboot
+- Server Credentials / Save & Connect
+- Auto-capture
+- Camera rotation
+- SFTP / import / export / Check Received
+- Admin Management
+- SMB and recognition logic
+- face_api.py
+- face_service.py
+- system_control.py
+- TTY5 service
+- SAS Windows application

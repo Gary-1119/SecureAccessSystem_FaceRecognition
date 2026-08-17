@@ -1,0 +1,23 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-28
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+11:02:57 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+11:02:57 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:02:59 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:03:09 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:03:18 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+11:03:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+11:04:14 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:00:24 | UNAUTHENTICATED      | PI CONNECTION BLOCKED        | Requested host: JEFACEDESKTOP · Result: Already connected
+15:28:42 | MANUAL               | UNLOCKED                     | Method: Manual
+15:28:51 | MANUAL               | UNLOCKED                     | Method: Manual
+15:29:08 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:29:08 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:30:57 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:31:46 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:32:45 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+15:35:14 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —

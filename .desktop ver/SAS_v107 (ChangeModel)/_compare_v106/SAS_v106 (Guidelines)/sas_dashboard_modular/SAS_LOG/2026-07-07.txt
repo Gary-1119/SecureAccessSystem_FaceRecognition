@@ -1,0 +1,27 @@
+======================================================================
+SAS AUDIT LOG - 2026-07-07
+======================================================================
+One row records one SAS action. Passwords and secret values are never written to this file.
+
+TIME     | ACTOR                | ACTION                       | DETAILS
+---------+----------------------+------------------------------+------------------------------------------
+09:17:19 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+09:17:20 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+09:17:23 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE001 · API port: 5000
+09:17:27 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+09:17:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+09:17:37 | ADMIN                | FACE CAPTURE STARTED         | Face ID: 4372447 · Mode: Auto
+09:17:43 | ADMIN                | FACE CAPTURE COMPLETED       | Face ID: 4372447 · Captured images: 39 · Mode: Auto
+09:17:56 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+09:17:57 | NOT_AUTHENTICATED    | UNLOCKED                     | Method: Emergency Hotkey · Workstation user: 4372447 · Access: Desktop only · Confidence: —
+14:18:23 | ADMIN                | LOGIN SUCCESS                | Role: Admin · Method: Built-in Local Admin
+14:18:23 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:19:40 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:19:40 | ADMIN                | PI CONNECTION FAILED         | Requested host: JEFACE0011 · Result: Failed
+14:19:48 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE001 · API port: 5000
+14:20:05 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:23:45 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:30:22 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings
+14:30:25 | ADMIN                | PI CONNECTED                 | Pi host: JEFACE001 · API port: 5000
+14:30:28 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Face Recognition
+14:30:30 | ADMIN                | RESTRICTED PAGE OPENED       | Page: Settings

@@ -45,6 +45,7 @@ public sealed partial class MainPage : Page
     private CancellationTokenSource? _jabilEyeReconnectCloseCts;
     private bool _suppressJabilEyeReconnectPrompt;
     private bool _isConnectingJabilEye;
+    private bool _isEmergencyUnlockPromptOpen;
     private bool _isNavigatingBack;
     private bool _showRecognitionPreview = true;
     private bool _isLoadingSettings;
@@ -511,11 +512,72 @@ public sealed partial class MainPage : Page
         _lockFlowController.Unlock(_settings, reason, ResetInactivityCountdown, CloseJabilEyeReconnectPrompt, UpdateLockUi);
     }
 
-    private void EmergencyUnlock()
+    private async void EmergencyUnlock()
     {
-        _log.WriteAudit("EMERGENCY UNLOCK", "Method=Emergency hotkey");
-        UnlockSystem("Emergency hotkey");
-        FaceStateTextBlock.Text = "Desktop input released; restricted pages still require normal authorization.";
+        if (!_lockFlowController.IsLocked || _isEmergencyUnlockPromptOpen)
+        {
+            return;
+        }
+
+        _isEmergencyUnlockPromptOpen = true;
+        _log.WriteAudit("EMERGENCY HOTKEY PRESSED", $"WindowsUser={Environment.UserName}");
+        FaceStateTextBlock.Text = "Emergency unlock requires administrator sign in.";
+
+        var dialog = new EmergencyAdminUnlockDialog(_authService)
+        {
+            XamlRoot = XamlRoot
+        };
+        dialog.ValidationFailed += EmergencyAdminUnlockDialog_ValidationFailed;
+
+        BeginEmergencyCredentialInputMode();
+        try
+        {
+            var result = await dialog.ShowAsync();
+            if (result == ContentDialogResult.Primary && dialog.SignedInAdmin is { IsAdmin: true } admin)
+            {
+                _log.WriteAudit("EMERGENCY UNLOCK APPROVED", $"Admin={admin.Ntid}; WindowsUser={Environment.UserName}");
+                AppSession.SignIn(admin.Ntid, admin.IsAdmin);
+                ApplyUserPermissions();
+                RefreshAdminList();
+                UnlockSystem($"Emergency admin unlock by {admin.Ntid}");
+                FaceStateTextBlock.Text = $"Emergency unlock approved by {admin.Ntid}.";
+                return;
+            }
+
+            _log.WriteAudit("EMERGENCY UNLOCK PROMPT CLOSED", $"WindowsUser={Environment.UserName}");
+            _lockFlowController.ApplyCurrentSettings(_settings);
+            FaceStateTextBlock.Text = "Emergency unlock cancelled. Waiting for an authorized face match.";
+        }
+        finally
+        {
+            dialog.ValidationFailed -= EmergencyAdminUnlockDialog_ValidationFailed;
+            _lockFlowController.EndCredentialEntryMode(_settings);
+            _isEmergencyUnlockPromptOpen = false;
+        }
+    }
+
+    private void EmergencyAdminUnlockDialog_ValidationFailed(object? sender, EmergencyAdminUnlockFailedEvent e)
+    {
+        var ntid = string.IsNullOrWhiteSpace(e.Ntid) ? "(blank)" : e.Ntid;
+        _log.WriteAudit("EMERGENCY UNLOCK DENIED", $"Attempt={e.Attempt}; Admin={ntid}; WindowsUser={Environment.UserName}; Error={e.Message}");
+    }
+
+    private void BeginEmergencyCredentialInputMode()
+    {
+        var window = App.ActiveWindow;
+        if (window is null)
+        {
+            _lockFlowController.ApplyCurrentSettings(_settings);
+            return;
+        }
+
+        var position = window.AppWindow.Position;
+        var size = window.AppWindow.Size;
+        _lockFlowController.BeginCredentialEntryMode(
+            position.X,
+            position.Y,
+            position.X + size.Width,
+            position.Y + size.Height);
     }
 
     private void UpdateLockUi()

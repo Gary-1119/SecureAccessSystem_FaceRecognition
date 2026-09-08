@@ -53,4 +53,14 @@ public sealed class LockFlowController
     {
         _runtimeLockService.Apply(IsLocked, settings);
     }
+
+    public void BeginCredentialEntryMode(int left, int top, int right, int bottom)
+    {
+        _runtimeLockService.BeginCredentialEntryMode(left, top, right, bottom);
+    }
+
+    public void EndCredentialEntryMode(AppSettings settings)
+    {
+        _runtimeLockService.EndCredentialEntryMode(settings);
+    }
 }

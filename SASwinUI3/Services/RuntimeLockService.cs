@@ -28,9 +28,11 @@ public sealed class RuntimeLockService : IDisposable
     private bool _keyboardBlocked;
     private bool _mouseBlocked;
     private bool _enableEmergencyHotkey = true;
+    private bool _credentialEntryMode;
     private bool _disposed;
     private long _lastEmergencyFireTicks;
     private Point _mouseAnchor;
+    private Rect _credentialBounds;
 
     public event EventHandler? EmergencyUnlockRequested;
 
@@ -80,6 +82,38 @@ public sealed class RuntimeLockService : IDisposable
         }
     }
 
+    public void BeginCredentialEntryMode(int left, int top, int right, int bottom)
+    {
+        _credentialEntryMode = true;
+        _keyboardBlocked = false;
+        _mouseBlocked = true;
+        _credentialBounds = new Rect
+        {
+            Left = left,
+            Top = top,
+            Right = Math.Max(left + 1, right),
+            Bottom = Math.Max(top + 1, bottom)
+        };
+
+        EnsureKeyboardHook();
+        EnsureMouseHook();
+        ClipToCredentialBounds();
+        _log.Write("Emergency admin credential prompt input mode started.");
+    }
+
+    public void EndCredentialEntryMode(AppSettings settings)
+    {
+        if (!_credentialEntryMode)
+        {
+            return;
+        }
+
+        _credentialEntryMode = false;
+        ClipCursor(IntPtr.Zero);
+        _log.Write("Emergency admin credential prompt input mode ended.");
+        Apply(_isLocked, settings);
+    }
+
     private void EnsureKeyboardHook()
     {
         if (_keyboardHook != IntPtr.Zero)
@@ -118,11 +152,21 @@ public sealed class RuntimeLockService : IDisposable
 
         if (_mouseHook == IntPtr.Zero)
         {
-            _mouseHook = SetWindowsHookEx(WhMouseLl, _mouseProc, IntPtr.Zero, 0);
-            if (_mouseHook == IntPtr.Zero)
-            {
-                _log.Write($"Mouse click block hook unavailable: Win32 error {Marshal.GetLastWin32Error()}");
-            }
+            EnsureMouseHook();
+        }
+    }
+
+    private void EnsureMouseHook()
+    {
+        if (_mouseHook != IntPtr.Zero)
+        {
+            return;
+        }
+
+        _mouseHook = SetWindowsHookEx(WhMouseLl, _mouseProc, IntPtr.Zero, 0);
+        if (_mouseHook == IntPtr.Zero)
+        {
+            _log.Write($"Mouse click block hook unavailable: Win32 error {Marshal.GetLastWin32Error()}");
         }
     }
 
@@ -146,6 +190,11 @@ public sealed class RuntimeLockService : IDisposable
             var message = wParam.ToInt32();
             if (message == WmKeyDown || message == WmSysKeyDown)
             {
+                if (_credentialEntryMode)
+                {
+                    return CallNextHookEx(_keyboardHook, nCode, wParam, lParam);
+                }
+
                 if (IsEmergencyComboDown())
                 {
                     FireEmergencyUnlock();
@@ -170,6 +219,12 @@ public sealed class RuntimeLockService : IDisposable
 
     private IntPtr MouseHookCallback(int nCode, IntPtr wParam, IntPtr lParam)
     {
+        if (nCode >= 0 && _isLocked && _credentialEntryMode)
+        {
+            ClipToCredentialBounds();
+            return CallNextHookEx(_mouseHook, nCode, wParam, lParam);
+        }
+
         if (nCode >= 0 && _isLocked && _mouseBlocked)
         {
             ClipToAnchor();
@@ -193,7 +248,14 @@ public sealed class RuntimeLockService : IDisposable
 
         if (_mouseBlocked)
         {
-            ClipToAnchor();
+            if (_credentialEntryMode)
+            {
+                ClipToCredentialBounds();
+            }
+            else
+            {
+                ClipToAnchor();
+            }
         }
     }
 
@@ -244,6 +306,12 @@ public sealed class RuntimeLockService : IDisposable
         };
         ClipCursor(ref rect);
         SetCursorPos(_mouseAnchor.X, _mouseAnchor.Y);
+    }
+
+    private void ClipToCredentialBounds()
+    {
+        var rect = _credentialBounds;
+        ClipCursor(ref rect);
     }
 
     public void Dispose()

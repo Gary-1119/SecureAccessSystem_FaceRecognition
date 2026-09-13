@@ -522,6 +522,8 @@ public sealed partial class MainPage : Page
         _isEmergencyUnlockPromptOpen = true;
         _log.WriteAudit("EMERGENCY HOTKEY PRESSED", $"WindowsUser={Environment.UserName}");
         FaceStateTextBlock.Text = "Emergency unlock requires administrator sign in.";
+        CloseJabilEyeReconnectPrompt();
+        ActivateMainWindow();
 
         var dialog = new EmergencyAdminUnlockDialog(_authService)
         {
@@ -574,6 +576,7 @@ public sealed partial class MainPage : Page
         var position = window.AppWindow.Position;
         var size = window.AppWindow.Size;
         _lockFlowController.BeginCredentialEntryMode(
+            WindowNative.GetWindowHandle(window),
             position.X,
             position.Y,
             position.X + size.Width,

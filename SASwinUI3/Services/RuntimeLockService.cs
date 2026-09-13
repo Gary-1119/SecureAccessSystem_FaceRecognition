@@ -15,7 +15,17 @@ public sealed class RuntimeLockService : IDisposable
     private const int VkShift = 0x10;
     private const int VkMenu = 0x12;
     private const int VkU = 0x55;
-
+    private const int VkTab = 0x09;
+    private const int VkEscape = 0x1B;
+    private const int VkF4 = 0x73;
+    private const int VkLWin = 0x5B;
+    private const int VkRWin = 0x5C;
+    private const uint SwpNoSize = 0x0001;
+    private const uint SwpNoMove = 0x0002;
+    private const uint SwpNoActivate = 0x0010;
+    private const uint SwpShowWindow = 0x0040;
+    private static readonly IntPtr HwndTopmost = new(-1);
+    private static readonly IntPtr HwndNotTopmost = new(-2);
     private readonly DispatcherQueue _dispatcherQueue;
     private readonly AppLogService _log;
     private readonly LowLevelProc _keyboardProc;
@@ -31,6 +41,7 @@ public sealed class RuntimeLockService : IDisposable
     private bool _credentialEntryMode;
     private bool _disposed;
     private long _lastEmergencyFireTicks;
+    private IntPtr _credentialAllowedWindow;
     private Point _mouseAnchor;
     private Rect _credentialBounds;
 
@@ -82,11 +93,12 @@ public sealed class RuntimeLockService : IDisposable
         }
     }
 
-    public void BeginCredentialEntryMode(int left, int top, int right, int bottom)
+    public void BeginCredentialEntryMode(IntPtr allowedWindowHandle, int left, int top, int right, int bottom)
     {
         _credentialEntryMode = true;
         _keyboardBlocked = false;
         _mouseBlocked = true;
+        _credentialAllowedWindow = allowedWindowHandle;
         _credentialBounds = new Rect
         {
             Left = left,
@@ -97,6 +109,7 @@ public sealed class RuntimeLockService : IDisposable
 
         EnsureKeyboardHook();
         EnsureMouseHook();
+        SetCredentialWindowTopmost(true);
         ClipToCredentialBounds();
         _log.Write("Emergency admin credential prompt input mode started.");
     }
@@ -109,6 +122,8 @@ public sealed class RuntimeLockService : IDisposable
         }
 
         _credentialEntryMode = false;
+        SetCredentialWindowTopmost(false);
+        _credentialAllowedWindow = IntPtr.Zero;
         ClipCursor(IntPtr.Zero);
         _log.Write("Emergency admin credential prompt input mode ended.");
         Apply(_isLocked, settings);
@@ -192,6 +207,12 @@ public sealed class RuntimeLockService : IDisposable
             {
                 if (_credentialEntryMode)
                 {
+                    var key = Marshal.PtrToStructure<KeyboardHookStruct>(lParam).VkCode;
+                    if (IsCredentialModeBlockedKey(key))
+                    {
+                        return new IntPtr(1);
+                    }
+
                     return CallNextHookEx(_keyboardHook, nCode, wParam, lParam);
                 }
 
@@ -221,7 +242,14 @@ public sealed class RuntimeLockService : IDisposable
     {
         if (nCode >= 0 && _isLocked && _credentialEntryMode)
         {
+            RefreshCredentialBounds();
             ClipToCredentialBounds();
+
+            if (!IsCursorInsideCredentialBounds() || !IsCursorOverCredentialWindow())
+            {
+                return new IntPtr(1);
+            }
+
             return CallNextHookEx(_mouseHook, nCode, wParam, lParam);
         }
 
@@ -250,6 +278,8 @@ public sealed class RuntimeLockService : IDisposable
         {
             if (_credentialEntryMode)
             {
+                SetCredentialWindowTopmost(true);
+                RefreshCredentialBounds();
                 ClipToCredentialBounds();
             }
             else
@@ -285,6 +315,19 @@ public sealed class RuntimeLockService : IDisposable
         return virtualKey is VkControl or VkShift or VkMenu or 0xA2 or 0xA3 or 0xA0 or 0xA1 or 0xA4 or 0xA5;
     }
 
+    private static bool IsCredentialModeBlockedKey(int virtualKey)
+    {
+        if (virtualKey is VkLWin or VkRWin)
+        {
+            return true;
+        }
+
+        var alt = IsKeyDown(VkMenu) || IsKeyDown(0xA4) || IsKeyDown(0xA5);
+        var ctrl = IsKeyDown(VkControl) || IsKeyDown(0xA2) || IsKeyDown(0xA3);
+        return (alt && virtualKey is VkTab or VkEscape or VkF4) ||
+               (ctrl && virtualKey == VkEscape);
+    }
+
     private static bool IsKeyDown(int virtualKey)
     {
         return (GetAsyncKeyState(virtualKey) & 0x8000) != 0;
@@ -312,6 +355,51 @@ public sealed class RuntimeLockService : IDisposable
     {
         var rect = _credentialBounds;
         ClipCursor(ref rect);
+    }
+
+    private void RefreshCredentialBounds()
+    {
+        if (_credentialAllowedWindow == IntPtr.Zero ||
+            !GetWindowRect(_credentialAllowedWindow, out var rect) ||
+            rect.Right <= rect.Left ||
+            rect.Bottom <= rect.Top)
+        {
+            return;
+        }
+
+        _credentialBounds = rect;
+    }
+
+    private bool IsCursorInsideCredentialBounds()
+    {
+        var point = GetCursorPosition();
+        return point.X >= _credentialBounds.Left &&
+               point.X < _credentialBounds.Right &&
+               point.Y >= _credentialBounds.Top &&
+               point.Y < _credentialBounds.Bottom;
+    }
+
+    private bool IsCursorOverCredentialWindow()
+    {
+        if (_credentialAllowedWindow == IntPtr.Zero)
+        {
+            return false;
+        }
+
+        var point = GetCursorPosition();
+        var target = WindowFromPoint(point);
+        return target == _credentialAllowedWindow || IsChild(_credentialAllowedWindow, target);
+    }
+
+    private void SetCredentialWindowTopmost(bool topmost)
+    {
+        if (_credentialAllowedWindow == IntPtr.Zero)
+        {
+            return;
+        }
+
+        var insertAfter = topmost ? HwndTopmost : HwndNotTopmost;
+        SetWindowPos(_credentialAllowedWindow, insertAfter, 0, 0, 0, 0, SwpNoMove | SwpNoSize | SwpNoActivate | SwpShowWindow);
     }
 
     public void Dispose()
@@ -378,6 +466,18 @@ public sealed class RuntimeLockService : IDisposable
 
     [DllImport("user32.dll")]
     private static extern bool ClipCursor(IntPtr lpRect);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    private static extern bool GetWindowRect(IntPtr hWnd, out Rect lpRect);
+
+    [DllImport("user32.dll")]
+    private static extern IntPtr WindowFromPoint(Point point);
+
+    [DllImport("user32.dll")]
+    private static extern bool IsChild(IntPtr hWndParent, IntPtr hWnd);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    private static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int x, int y, int cx, int cy, uint flags);
 
     [DllImport("user32.dll")]
     private static extern bool PostThreadMessage(uint idThread, int msg, IntPtr wParam, IntPtr lParam);

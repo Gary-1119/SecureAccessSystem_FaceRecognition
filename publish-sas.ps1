@@ -175,6 +175,15 @@ if ($answer -eq "DELETE") {
 }
 '@ | Set-Content -Path (Join-Path $packageRoot "Uninstall for this user.ps1") -Encoding ASCII
 
+foreach ($scriptName in @(
+    "Install for all users.bat",
+    "Install for all users.ps1",
+    "Uninstall for all users.bat",
+    "Uninstall for all users.ps1"
+)) {
+    Copy-Item -LiteralPath (Join-Path $root "installer\$scriptName") -Destination (Join-Path $packageRoot $scriptName) -Force
+}
+
 @'
 # Secure Access System Deploy Folder
 
@@ -190,10 +199,21 @@ App files are inside:
 App\
 ```
 
-To autostart for all Windows users:
+To install and autostart for all Windows users:
 
-1. Right-click `Install common startup shortcut.ps1`.
-2. Run with PowerShell as administrator.
+1. Double-click `Install for all users.bat` and approve the administrator UAC prompt.
+2. App files are copied to `%ProgramFiles%\SASProgramData`.
+3. The installer adds an HKLM Run startup entry, a Public Desktop shortcut, and an All Users Start Menu shortcut.
+4. Shared data in `%ProgramData%\SASstream` is preserved on updates.
+
+To check the all-users startup entry:
+
+```powershell
+Get-ItemProperty "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" | Select-Object "Secure Access System ProgramData"
+```
+
+To uninstall for all Windows users, double-click `Uninstall for all users.bat`, approve UAC, and choose whether to keep shared data.
+Use one installation mode per PC; installing both modes creates two startup entries for the same user.
 
 To install and autostart for the current Windows user without administrator permission:
 

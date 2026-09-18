@@ -14,15 +14,40 @@ $runKey = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run"
 $runName = "Secure Access System ProgramData"
 $desktopShortcutPath = Join-Path ([Environment]::GetFolderPath("CommonDesktopDirectory")) "Secure Access System ProgramData.lnk"
 $startMenuShortcutPath = Join-Path ([Environment]::GetFolderPath("CommonPrograms")) "Secure Access System ProgramData.lnk"
+$installedExe = Join-Path $installRoot "App\SAS.exe"
 
-if (Get-Process -Name "SAS" -ErrorAction SilentlyContinue) {
-    throw "SAS is running. Close SAS in every signed-in session before uninstalling."
+function Get-InstalledSasProcesses {
+    @(Get-CimInstance Win32_Process -Filter "Name = 'SAS.exe'" | Where-Object {
+        [string]::Equals($_.ExecutablePath, $installedExe, [StringComparison]::OrdinalIgnoreCase)
+    })
 }
 
+# Remove startup first so a newly signed-in session cannot launch another copy.
 Remove-ItemProperty -Path $runKey -Name $runName -ErrorAction SilentlyContinue
-Remove-Item -LiteralPath $desktopShortcutPath -Force -ErrorAction SilentlyContinue
-Remove-Item -LiteralPath $startMenuShortcutPath -Force -ErrorAction SilentlyContinue
-Remove-Item -LiteralPath $installRoot -Recurse -Force -ErrorAction SilentlyContinue
+$runningSas = Get-InstalledSasProcesses
+if ($runningSas.Count -gt 0) {
+    Write-Host "Closing $($runningSas.Count) installed SAS instance(s) across Windows sessions..."
+    foreach ($process in $runningSas) {
+        Stop-Process -Id $process.ProcessId -Force -ErrorAction Stop
+    }
+
+    $deadline = (Get-Date).AddSeconds(15)
+    while ((Get-InstalledSasProcesses).Count -gt 0 -and (Get-Date) -lt $deadline) {
+        Start-Sleep -Milliseconds 250
+    }
+    if ((Get-InstalledSasProcesses).Count -gt 0) {
+        throw "Some installed SAS instances are still running. Uninstall stopped before deleting app files."
+    }
+}
+
+foreach ($shortcutPath in @($desktopShortcutPath, $startMenuShortcutPath)) {
+    if (Test-Path -LiteralPath $shortcutPath) {
+        Remove-Item -LiteralPath $shortcutPath -Force
+    }
+}
+if (Test-Path -LiteralPath $installRoot) {
+    Remove-Item -LiteralPath $installRoot -Recurse -Force
+}
 
 Write-Host "The all-users SAS installation was removed."
 Write-Host "Shared data path: $dataRoot"

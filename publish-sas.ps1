@@ -212,7 +212,7 @@ To check the all-users startup entry:
 Get-ItemProperty "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" | Select-Object "Secure Access System ProgramData"
 ```
 
-To uninstall for all Windows users, double-click `Uninstall for all users.bat`, approve UAC, and choose whether to keep shared data.
+To uninstall for all Windows users, double-click `Uninstall for all users.bat`, approve UAC, and choose whether to keep shared data. The uninstaller force-closes SAS from the all-users installation in every signed-in Windows session.
 Use one installation mode per PC; installing both modes creates two startup entries for the same user.
 
 To install and autostart for the current Windows user without administrator permission:
